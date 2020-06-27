@@ -1,0 +1,412 @@
+Classfile /D:/JavaTools/IntelliJ-workspace/Git/JavaBese/threads/target/classes/com/lsy/thread/SynchronizeDemo1.class
+  Last modified 2020-6-26; size 2648 bytes
+  MD5 checksum 6867c531d236a5feca58210b0ed63f4f
+  Compiled from "SynchronizeDemo1.java"
+public class com.lsy.thread.SynchronizeDemo1
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Methodref          #25.#53       // java/lang/Object."<init>":()V
+    #2 = Fieldref           #54.#55       // java/util/concurrent/TimeUnit.SECONDS:Ljava/util/concurrent/TimeUnit;
+    #3 = Long               2l
+    #5 = Methodref          #54.#56       // java/util/concurrent/TimeUnit.sleep:(J)V
+    #6 = Fieldref           #57.#58       // java/lang/System.out:Ljava/io/PrintStream;
+    #7 = Class              #59           // java/lang/StringBuilder
+    #8 = Methodref          #7.#53        // java/lang/StringBuilder."<init>":()V
+    #9 = Methodref          #20.#60       // java/lang/Thread.currentThread:()Ljava/lang/Thread;
+   #10 = Methodref          #20.#61       // java/lang/Thread.getName:()Ljava/lang/String;
+   #11 = Methodref          #7.#62        // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #12 = String             #63           //  is running
+   #13 = Methodref          #7.#64        // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #14 = Methodref          #65.#66       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #15 = Class              #67           // java/lang/InterruptedException
+   #16 = Methodref          #15.#68       // java/lang/InterruptedException.printStackTrace:()V
+   #17 = Fieldref           #54.#69       // java/util/concurrent/TimeUnit.MINUTES:Ljava/util/concurrent/TimeUnit;
+   #18 = Class              #70           // com/lsy/thread/SynchronizeDemo1
+   #19 = Methodref          #18.#53       // com/lsy/thread/SynchronizeDemo1."<init>":()V
+   #20 = Class              #71           // java/lang/Thread
+   #21 = Methodref          #25.#72       // java/lang/Object.getClass:()Ljava/lang/Class;
+   #22 = InvokeDynamic      #0:#77        // #0:run:(Lcom/lsy/thread/SynchronizeDemo1;)Ljava/lang/Runnable;
+   #23 = Methodref          #20.#78       // java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+   #24 = Methodref          #20.#79       // java/lang/Thread.start:()V
+   #25 = Class              #80           // java/lang/Object
+   #26 = Utf8               <init>
+   #27 = Utf8               ()V
+   #28 = Utf8               Code
+   #29 = Utf8               LineNumberTable
+   #30 = Utf8               LocalVariableTable
+   #31 = Utf8               this
+   #32 = Utf8               Lcom/lsy/thread/SynchronizeDemo1;
+   #33 = Utf8               accessResources1
+   #34 = Utf8               e
+   #35 = Utf8               Ljava/lang/InterruptedException;
+   #36 = Utf8               StackMapTable
+   #37 = Class              #67           // java/lang/InterruptedException
+   #38 = Utf8               accessResources2
+   #39 = Utf8               accessResources3
+   #40 = Class              #70           // com/lsy/thread/SynchronizeDemo1
+   #41 = Class              #80           // java/lang/Object
+   #42 = Class              #81           // java/lang/Throwable
+   #43 = Utf8               accessResources4
+   #44 = Utf8               main
+   #45 = Utf8               ([Ljava/lang/String;)V
+   #46 = Utf8               i
+   #47 = Utf8               I
+   #48 = Utf8               args
+   #49 = Utf8               [Ljava/lang/String;
+   #50 = Utf8               synchronizeDemo
+   #51 = Utf8               SourceFile
+   #52 = Utf8               SynchronizeDemo1.java
+   #53 = NameAndType        #26:#27       // "<init>":()V
+   #54 = Class              #82           // java/util/concurrent/TimeUnit
+   #55 = NameAndType        #83:#84       // SECONDS:Ljava/util/concurrent/TimeUnit;
+   #56 = NameAndType        #85:#86       // sleep:(J)V
+   #57 = Class              #87           // java/lang/System
+   #58 = NameAndType        #88:#89       // out:Ljava/io/PrintStream;
+   #59 = Utf8               java/lang/StringBuilder
+   #60 = NameAndType        #90:#91       // currentThread:()Ljava/lang/Thread;
+   #61 = NameAndType        #92:#93       // getName:()Ljava/lang/String;
+   #62 = NameAndType        #94:#95       // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #63 = Utf8                is running
+   #64 = NameAndType        #96:#93       // toString:()Ljava/lang/String;
+   #65 = Class              #97           // java/io/PrintStream
+   #66 = NameAndType        #98:#99       // println:(Ljava/lang/String;)V
+   #67 = Utf8               java/lang/InterruptedException
+   #68 = NameAndType        #100:#27      // printStackTrace:()V
+   #69 = NameAndType        #101:#84      // MINUTES:Ljava/util/concurrent/TimeUnit;
+   #70 = Utf8               com/lsy/thread/SynchronizeDemo1
+   #71 = Utf8               java/lang/Thread
+   #72 = NameAndType        #102:#103     // getClass:()Ljava/lang/Class;
+   #73 = Utf8               BootstrapMethods
+   #74 = MethodHandle       #6:#104       // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #75 = MethodType         #27           //  ()V
+   #76 = MethodHandle       #5:#105       // invokevirtual com/lsy/thread/SynchronizeDemo1.accessResources3:()V
+   #77 = NameAndType        #106:#107     // run:(Lcom/lsy/thread/SynchronizeDemo1;)Ljava/lang/Runnable;
+   #78 = NameAndType        #26:#108      // "<init>":(Ljava/lang/Runnable;)V
+   #79 = NameAndType        #109:#27      // start:()V
+   #80 = Utf8               java/lang/Object
+   #81 = Utf8               java/lang/Throwable
+   #82 = Utf8               java/util/concurrent/TimeUnit
+   #83 = Utf8               SECONDS
+   #84 = Utf8               Ljava/util/concurrent/TimeUnit;
+   #85 = Utf8               sleep
+   #86 = Utf8               (J)V
+   #87 = Utf8               java/lang/System
+   #88 = Utf8               out
+   #89 = Utf8               Ljava/io/PrintStream;
+   #90 = Utf8               currentThread
+   #91 = Utf8               ()Ljava/lang/Thread;
+   #92 = Utf8               getName
+   #93 = Utf8               ()Ljava/lang/String;
+   #94 = Utf8               append
+   #95 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #96 = Utf8               toString
+   #97 = Utf8               java/io/PrintStream
+   #98 = Utf8               println
+   #99 = Utf8               (Ljava/lang/String;)V
+  #100 = Utf8               printStackTrace
+  #101 = Utf8               MINUTES
+  #102 = Utf8               getClass
+  #103 = Utf8               ()Ljava/lang/Class;
+  #104 = Methodref          #110.#111     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #105 = Methodref          #18.#112      // com/lsy/thread/SynchronizeDemo1.accessResources3:()V
+  #106 = Utf8               run
+  #107 = Utf8               (Lcom/lsy/thread/SynchronizeDemo1;)Ljava/lang/Runnable;
+  #108 = Utf8               (Ljava/lang/Runnable;)V
+  #109 = Utf8               start
+  #110 = Class              #113          // java/lang/invoke/LambdaMetafactory
+  #111 = NameAndType        #114:#118     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #112 = NameAndType        #39:#27       // accessResources3:()V
+  #113 = Utf8               java/lang/invoke/LambdaMetafactory
+  #114 = Utf8               metafactory
+  #115 = Class              #120          // java/lang/invoke/MethodHandles$Lookup
+  #116 = Utf8               Lookup
+  #117 = Utf8               InnerClasses
+  #118 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #119 = Class              #121          // java/lang/invoke/MethodHandles
+  #120 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #121 = Utf8               java/lang/invoke/MethodHandles
+{
+  public com.lsy.thread.SynchronizeDemo1();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 9: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/lsy/thread/SynchronizeDemo1;
+
+  public static synchronized void accessResources1();
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_SYNCHRONIZED // flags标志位 ACC_SYNCHRONIZED
+    Code:
+      stack=3, locals=1, args_size=0
+         0: getstatic     #2                  // Field java/util/concurrent/TimeUnit.SECONDS:Ljava/util/concurrent/TimeUnit;
+         3: ldc2_w        #3                  // long 2l
+         6: invokevirtual #5                  // Method java/util/concurrent/TimeUnit.sleep:(J)V
+         9: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        12: new           #7                  // class java/lang/StringBuilder
+        15: dup
+        16: invokespecial #8                  // Method java/lang/StringBuilder."<init>":()V
+        19: invokestatic  #9                  // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+        22: invokevirtual #10                 // Method java/lang/Thread.getName:()Ljava/lang/String;
+        25: invokevirtual #11                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        28: ldc           #12                 // String  is running
+        30: invokevirtual #11                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        33: invokevirtual #13                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        36: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        39: goto          47
+        42: astore_0
+        43: aload_0
+        44: invokevirtual #16                 // Method java/lang/InterruptedException.printStackTrace:()V
+        47: return
+      Exception table:
+         from    to  target type
+             0    39    42   Class java/lang/InterruptedException
+      LineNumberTable:
+        line 16: 0
+        line 17: 9
+        line 20: 39
+        line 18: 42
+        line 19: 43
+        line 21: 47
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           43       4     0     e   Ljava/lang/InterruptedException;
+      StackMapTable: number_of_entries = 2
+        frame_type = 106 /* same_locals_1_stack_item */
+          stack = [ class java/lang/InterruptedException ]
+        frame_type = 4 /* same */
+
+  public synchronized void accessResources2();
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_SYNCHRONIZED
+    Code:
+      stack=3, locals=2, args_size=1
+         0: getstatic     #2                  // Field java/util/concurrent/TimeUnit.SECONDS:Ljava/util/concurrent/TimeUnit;
+         3: ldc2_w        #3                  // long 2l
+         6: invokevirtual #5                  // Method java/util/concurrent/TimeUnit.sleep:(J)V
+         9: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        12: new           #7                  // class java/lang/StringBuilder
+        15: dup
+        16: invokespecial #8                  // Method java/lang/StringBuilder."<init>":()V
+        19: invokestatic  #9                  // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+        22: invokevirtual #10                 // Method java/lang/Thread.getName:()Ljava/lang/String;
+        25: invokevirtual #11                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        28: ldc           #12                 // String  is running
+        30: invokevirtual #11                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        33: invokevirtual #13                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        36: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        39: goto          47
+        42: astore_1
+        43: aload_1
+        44: invokevirtual #16                 // Method java/lang/InterruptedException.printStackTrace:()V
+        47: return
+      Exception table:
+         from    to  target type
+             0    39    42   Class java/lang/InterruptedException
+      LineNumberTable:
+        line 28: 0
+        line 29: 9
+        line 32: 39
+        line 30: 42
+        line 31: 43
+        line 33: 47
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           43       4     1     e   Ljava/lang/InterruptedException;
+            0      48     0  this   Lcom/lsy/thread/SynchronizeDemo1;
+      StackMapTable: number_of_entries = 2
+        frame_type = 106 /* same_locals_1_stack_item */
+          stack = [ class java/lang/InterruptedException ]
+        frame_type = 4 /* same */
+
+  public void accessResources3();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=4, args_size=1
+         0: aload_0
+         1: dup
+         2: astore_1
+         3: monitorenter
+         4: getstatic     #17                 // Field java/util/concurrent/TimeUnit.MINUTES:Ljava/util/concurrent/TimeUnit;
+         7: ldc2_w        #3                  // long 2l
+        10: invokevirtual #5                  // Method java/util/concurrent/TimeUnit.sleep:(J)V
+        13: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        16: new           #7                  // class java/lang/StringBuilder
+        19: dup
+        20: invokespecial #8                  // Method java/lang/StringBuilder."<init>":()V
+        23: invokestatic  #9                  // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+        26: invokevirtual #10                 // Method java/lang/Thread.getName:()Ljava/lang/String;
+        29: invokevirtual #11                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        32: ldc           #12                 // String  is running
+        34: invokevirtual #11                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        37: invokevirtual #13                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        40: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        43: goto          51
+        46: astore_2
+        47: aload_2
+        48: invokevirtual #16                 // Method java/lang/InterruptedException.printStackTrace:()V
+        51: aload_1
+        52: monitorexit
+        53: goto          61
+        56: astore_3
+        57: aload_1
+        58: monitorexit
+        59: aload_3
+        60: athrow
+        61: return
+      Exception table:
+         from    to  target type
+             4    43    46   Class java/lang/InterruptedException
+             4    53    56   any
+            56    59    56   any
+      LineNumberTable:
+        line 42: 0
+        line 45: 4
+        line 46: 13
+        line 49: 43
+        line 47: 46
+        line 48: 47
+        line 50: 51
+        line 52: 61
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           47       4     2     e   Ljava/lang/InterruptedException;
+            0      62     0  this   Lcom/lsy/thread/SynchronizeDemo1;
+      StackMapTable: number_of_entries = 4
+        frame_type = 255 /* full_frame */
+          offset_delta = 46
+          locals = [ class com/lsy/thread/SynchronizeDemo1, class java/lang/Object ]
+          stack = [ class java/lang/InterruptedException ]
+        frame_type = 4 /* same */
+        frame_type = 68 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+        frame_type = 250 /* chop */
+          offset_delta = 4
+
+  public void accessResources4();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=4, args_size=1
+         0: ldc           #18                 // class com/lsy/thread/SynchronizeDemo1
+         2: dup
+         3: astore_1
+         4: monitorenter
+         5: getstatic     #2                  // Field java/util/concurrent/TimeUnit.SECONDS:Ljava/util/concurrent/TimeUnit;
+         8: ldc2_w        #3                  // long 2l
+        11: invokevirtual #5                  // Method java/util/concurrent/TimeUnit.sleep:(J)V
+        14: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        17: new           #7                  // class java/lang/StringBuilder
+        20: dup
+        21: invokespecial #8                  // Method java/lang/StringBuilder."<init>":()V
+        24: invokestatic  #9                  // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+        27: invokevirtual #10                 // Method java/lang/Thread.getName:()Ljava/lang/String;
+        30: invokevirtual #11                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        33: ldc           #12                 // String  is running
+        35: invokevirtual #11                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        38: invokevirtual #13                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        41: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        44: goto          52
+        47: astore_2
+        48: aload_2
+        49: invokevirtual #16                 // Method java/lang/InterruptedException.printStackTrace:()V
+        52: aload_1
+        53: monitorexit
+        54: goto          62
+        57: astore_3
+        58: aload_1
+        59: monitorexit
+        60: aload_3
+        61: athrow
+        62: return
+      Exception table:
+         from    to  target type
+             5    44    47   Class java/lang/InterruptedException
+             5    54    57   any
+            57    60    57   any
+      LineNumberTable:
+        line 61: 0
+        line 63: 5
+        line 64: 14
+        line 67: 44
+        line 65: 47
+        line 66: 48
+        line 68: 52
+        line 70: 62
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           48       4     2     e   Ljava/lang/InterruptedException;
+            0      63     0  this   Lcom/lsy/thread/SynchronizeDemo1;
+      StackMapTable: number_of_entries = 4
+        frame_type = 255 /* full_frame */
+          offset_delta = 47
+          locals = [ class com/lsy/thread/SynchronizeDemo1, class java/lang/Object ]
+          stack = [ class java/lang/InterruptedException ]
+        frame_type = 4 /* same */
+        frame_type = 68 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+        frame_type = 250 /* chop */
+          offset_delta = 4
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=3, args_size=1
+         0: new           #18                 // class com/lsy/thread/SynchronizeDemo1
+         3: dup
+         4: invokespecial #19                 // Method "<init>":()V
+         7: astore_1
+         8: iconst_0
+         9: istore_2
+        10: iload_2
+        11: iconst_5
+        12: if_icmpge     42
+        15: new           #20                 // class java/lang/Thread
+        18: dup
+        19: aload_1
+        20: dup
+        21: invokevirtual #21                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        24: pop
+        25: invokedynamic #22,  0             // InvokeDynamic #0:run:(Lcom/lsy/thread/SynchronizeDemo1;)Ljava/lang/Runnable;
+        30: invokespecial #23                 // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+        33: invokevirtual #24                 // Method java/lang/Thread.start:()V
+        36: iinc          2, 1
+        39: goto          10
+        42: return
+      LineNumberTable:
+        line 73: 0
+        line 74: 8
+        line 77: 15
+        line 74: 36
+        line 80: 42
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           10      32     2     i   I
+            0      43     0  args   [Ljava/lang/String;
+            8      35     1 synchronizeDemo   Lcom/lsy/thread/SynchronizeDemo1;
+      StackMapTable: number_of_entries = 2
+        frame_type = 253 /* append */
+          offset_delta = 10
+          locals = [ class com/lsy/thread/SynchronizeDemo1, int ]
+        frame_type = 250 /* chop */
+          offset_delta = 31
+}
+SourceFile: "SynchronizeDemo1.java"
+InnerClasses:
+     public static final #116= #115 of #119; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #74 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #75 ()V
+      #76 invokevirtual com/lsy/thread/SynchronizeDemo1.accessResources3:()V
+      #75 ()V

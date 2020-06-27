@@ -1,0 +1,195 @@
+Classfile /D:/JavaTools/IntelliJ-workspace/Git/JavaBese/threads/target/classes/com/lsy/thread/volatiledemo/ReaderAndUpdater.class
+  Last modified 2020-6-26; size 2234 bytes
+  MD5 checksum 67c5a512591645403fcfaf2aa9ad68a3
+  Compiled from "ReaderAndUpdater.java"
+public class com.lsy.thread.volatiledemo.ReaderAndUpdater
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Methodref          #26.#53       // java/lang/Object."<init>":()V
+    #2 = Class              #54           // java/lang/Thread
+    #3 = InvokeDynamic      #0:#59        // #0:run:()Ljava/lang/Runnable;
+    #4 = String             #60           // Reader
+    #5 = Methodref          #2.#61        // java/lang/Thread."<init>":(Ljava/lang/Runnable;Ljava/lang/String;)V
+    #6 = Methodref          #2.#62        // java/lang/Thread.start:()V
+    #7 = InvokeDynamic      #1:#59        // #1:run:()Ljava/lang/Runnable;
+    #8 = String             #64           // Update
+    #9 = Fieldref           #10.#65       // com/lsy/thread/volatiledemo/ReaderAndUpdater.init_value:I
+   #10 = Class              #66           // com/lsy/thread/volatiledemo/ReaderAndUpdater
+   #11 = Fieldref           #67.#68       // java/lang/System.out:Ljava/io/PrintStream;
+   #12 = Class              #69           // java/lang/StringBuilder
+   #13 = Methodref          #12.#53       // java/lang/StringBuilder."<init>":()V
+   #14 = String             #70           // update
+   #15 = Methodref          #12.#71       // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #16 = Methodref          #12.#72       // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+   #17 = Methodref          #12.#73       // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #18 = Methodref          #74.#75       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #19 = Fieldref           #76.#77       // java/util/concurrent/TimeUnit.SECONDS:Ljava/util/concurrent/TimeUnit;
+   #20 = Long               2l
+   #22 = Methodref          #76.#78       // java/util/concurrent/TimeUnit.sleep:(J)V
+   #23 = Class              #79           // java/lang/InterruptedException
+   #24 = Methodref          #23.#80       // java/lang/InterruptedException.printStackTrace:()V
+   #25 = String             #81           // read
+   #26 = Class              #82           // java/lang/Object
+   #27 = Utf8               MAX
+   #28 = Utf8               I
+   #29 = Utf8               ConstantValue
+   #30 = Integer            5
+   #31 = Utf8               init_value
+   #32 = Utf8               <init>
+   #33 = Utf8               ()V
+   #34 = Utf8               Code
+   #35 = Utf8               LineNumberTable
+   #36 = Utf8               LocalVariableTable
+   #37 = Utf8               this
+   #38 = Utf8               Lcom/lsy/thread/volatiledemo/ReaderAndUpdater;
+   #39 = Utf8               main
+   #40 = Utf8               ([Ljava/lang/String;)V
+   #41 = Utf8               args
+   #42 = Utf8               [Ljava/lang/String;
+   #43 = Utf8               lambda$main$1
+   #44 = Utf8               e
+   #45 = Utf8               Ljava/lang/InterruptedException;
+   #46 = Utf8               localValue
+   #47 = Utf8               StackMapTable
+   #48 = Class              #79           // java/lang/InterruptedException
+   #49 = Utf8               lambda$main$0
+   #50 = Utf8               <clinit>
+   #51 = Utf8               SourceFile
+   #52 = Utf8               ReaderAndUpdater.java
+   #53 = NameAndType        #32:#33       // "<init>":()V
+   #54 = Utf8               java/lang/Thread
+   #55 = Utf8               BootstrapMethods
+   #56 = MethodHandle       #6:#83        // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #57 = MethodType         #33           //  ()V
+   #58 = MethodHandle       #6:#84        // invokestatic com/lsy/thread/volatiledemo/ReaderAndUpdater.lambda$main$0:()V
+   #59 = NameAndType        #85:#86       // run:()Ljava/lang/Runnable;
+   #60 = Utf8               Reader
+   #61 = NameAndType        #32:#87       // "<init>":(Ljava/lang/Runnable;Ljava/lang/String;)V
+   #62 = NameAndType        #88:#33       // start:()V
+   #63 = MethodHandle       #6:#89        // invokestatic com/lsy/thread/volatiledemo/ReaderAndUpdater.lambda$main$1:()V
+   #64 = Utf8               Update
+   #65 = NameAndType        #31:#28       // init_value:I
+   #66 = Utf8               com/lsy/thread/volatiledemo/ReaderAndUpdater
+   #67 = Class              #90           // java/lang/System
+   #68 = NameAndType        #91:#92       // out:Ljava/io/PrintStream;
+   #69 = Utf8               java/lang/StringBuilder
+   #70 = Utf8               update
+   #71 = NameAndType        #93:#94       // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #72 = NameAndType        #93:#95       // append:(I)Ljava/lang/StringBuilder;
+   #73 = NameAndType        #96:#97       // toString:()Ljava/lang/String;
+   #74 = Class              #98           // java/io/PrintStream
+   #75 = NameAndType        #99:#100      // println:(Ljava/lang/String;)V
+   #76 = Class              #101          // java/util/concurrent/TimeUnit
+   #77 = NameAndType        #102:#103     // SECONDS:Ljava/util/concurrent/TimeUnit;
+   #78 = NameAndType        #104:#105     // sleep:(J)V
+   #79 = Utf8               java/lang/InterruptedException
+   #80 = NameAndType        #106:#33      // printStackTrace:()V
+   #81 = Utf8               read
+   #82 = Utf8               java/lang/Object
+   #83 = Methodref          #107.#108     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #84 = Methodref          #10.#109      // com/lsy/thread/volatiledemo/ReaderAndUpdater.lambda$main$0:()V
+   #85 = Utf8               run
+   #86 = Utf8               ()Ljava/lang/Runnable;
+   #87 = Utf8               (Ljava/lang/Runnable;Ljava/lang/String;)V
+   #88 = Utf8               start
+   #89 = Methodref          #10.#110      // com/lsy/thread/volatiledemo/ReaderAndUpdater.lambda$main$1:()V
+   #90 = Utf8               java/lang/System
+   #91 = Utf8               out
+   #92 = Utf8               Ljava/io/PrintStream;
+   #93 = Utf8               append
+   #94 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #95 = Utf8               (I)Ljava/lang/StringBuilder;
+   #96 = Utf8               toString
+   #97 = Utf8               ()Ljava/lang/String;
+   #98 = Utf8               java/io/PrintStream
+   #99 = Utf8               println
+  #100 = Utf8               (Ljava/lang/String;)V
+  #101 = Utf8               java/util/concurrent/TimeUnit
+  #102 = Utf8               SECONDS
+  #103 = Utf8               Ljava/util/concurrent/TimeUnit;
+  #104 = Utf8               sleep
+  #105 = Utf8               (J)V
+  #106 = Utf8               printStackTrace
+  #107 = Class              #111          // java/lang/invoke/LambdaMetafactory
+  #108 = NameAndType        #112:#116     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #109 = NameAndType        #49:#33       // lambda$main$0:()V
+  #110 = NameAndType        #43:#33       // lambda$main$1:()V
+  #111 = Utf8               java/lang/invoke/LambdaMetafactory
+  #112 = Utf8               metafactory
+  #113 = Class              #118          // java/lang/invoke/MethodHandles$Lookup
+  #114 = Utf8               Lookup
+  #115 = Utf8               InnerClasses
+  #116 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #117 = Class              #119          // java/lang/invoke/MethodHandles
+  #118 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #119 = Utf8               java/lang/invoke/MethodHandles
+{
+  public com.lsy.thread.volatiledemo.ReaderAndUpdater();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 8: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/lsy/thread/volatiledemo/ReaderAndUpdater;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: new           #2                  // class java/lang/Thread
+         3: dup
+         4: invokedynamic #3,  0              // InvokeDynamic #0:run:()Ljava/lang/Runnable;
+         9: ldc           #4                  // String Reader
+        11: invokespecial #5                  // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;Ljava/lang/String;)V
+        14: invokevirtual #6                  // Method java/lang/Thread.start:()V
+        17: new           #2                  // class java/lang/Thread
+        20: dup
+        21: invokedynamic #7,  0              // InvokeDynamic #1:run:()Ljava/lang/Runnable;
+        26: ldc           #8                  // String Update
+        28: invokespecial #5                  // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;Ljava/lang/String;)V
+        31: invokevirtual #6                  // Method java/lang/Thread.start:()V
+        34: return
+      LineNumberTable:
+        line 39: 0
+        line 47: 14
+        line 49: 17
+        line 62: 31
+        line 63: 34
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      35     0  args   [Ljava/lang/String;
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_0
+         1: putstatic     #9                  // Field init_value:I
+         4: return
+      LineNumberTable:
+        line 24: 0
+}
+SourceFile: "ReaderAndUpdater.java"
+InnerClasses:
+     public static final #114= #113 of #117; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #56 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #57 ()V
+      #58 invokestatic com/lsy/thread/volatiledemo/ReaderAndUpdater.lambda$main$0:()V
+      #57 ()V
+  1: #56 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #57 ()V
+      #63 invokestatic com/lsy/thread/volatiledemo/ReaderAndUpdater.lambda$main$1:()V
+      #57 ()V

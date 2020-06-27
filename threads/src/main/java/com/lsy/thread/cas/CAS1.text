@@ -1,0 +1,260 @@
+Classfile /D:/JavaTools/IntelliJ-workspace/Git/JavaBese/threads/target/classes/com/lsy/thread/cas/CAS1.class
+  Last modified 2020-6-27; size 2018 bytes
+  MD5 checksum 4ef1eacf45dfba9d4db0c985338f9675
+  Compiled from "CAS1.java"
+public class com.lsy.thread.cas.CAS1
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Methodref          #19.#50       // java/lang/Object."<init>":()V
+    #2 = Fieldref           #18.#51       // com/lsy/thread/cas/CAS1.m:I
+    #3 = Fieldref           #18.#52       // com/lsy/thread/cas/CAS1.atomic:Ljava/util/concurrent/atomic/AtomicInteger;
+    #4 = Methodref          #16.#53       // java/util/concurrent/atomic/AtomicInteger.incrementAndGet:()I
+    #5 = Class              #54           // java/lang/Thread
+    #6 = InvokeDynamic      #0:#59        // #0:run:()Ljava/lang/Runnable;
+    #7 = Methodref          #5.#60        // java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+    #8 = Methodref          #5.#61        // java/lang/Thread.start:()V
+    #9 = Methodref          #5.#62        // java/lang/Thread.join:()V
+   #10 = Fieldref           #63.#64       // java/lang/System.out:Ljava/io/PrintStream;
+   #11 = Methodref          #65.#66       // java/io/PrintStream.println:(I)V
+   #12 = InvokeDynamic      #1:#59        // #1:run:()Ljava/lang/Runnable;
+   #13 = Methodref          #16.#68       // java/util/concurrent/atomic/AtomicInteger.get:()I
+   #14 = Methodref          #18.#69       // com/lsy/thread/cas/CAS1.increaseAtomic:()V
+   #15 = Methodref          #18.#70       // com/lsy/thread/cas/CAS1.increase:()V
+   #16 = Class              #71           // java/util/concurrent/atomic/AtomicInteger
+   #17 = Methodref          #16.#72       // java/util/concurrent/atomic/AtomicInteger."<init>":(I)V
+   #18 = Class              #73           // com/lsy/thread/cas/CAS1
+   #19 = Class              #74           // java/lang/Object
+   #20 = Utf8               m
+   #21 = Utf8               I
+   #22 = Utf8               atomic
+   #23 = Utf8               Ljava/util/concurrent/atomic/AtomicInteger;
+   #24 = Utf8               <init>
+   #25 = Utf8               ()V
+   #26 = Utf8               Code
+   #27 = Utf8               LineNumberTable
+   #28 = Utf8               LocalVariableTable
+   #29 = Utf8               this
+   #30 = Utf8               Lcom/lsy/thread/cas/CAS1;
+   #31 = Utf8               increase
+   #32 = Utf8               increaseAtomic
+   #33 = Utf8               main
+   #34 = Utf8               ([Ljava/lang/String;)V
+   #35 = Utf8               i
+   #36 = Utf8               args
+   #37 = Utf8               [Ljava/lang/String;
+   #38 = Utf8               t
+   #39 = Utf8               [Ljava/lang/Thread;
+   #40 = Utf8               tf
+   #41 = Utf8               StackMapTable
+   #42 = Class              #39           // "[Ljava/lang/Thread;"
+   #43 = Utf8               Exceptions
+   #44 = Class              #75           // java/lang/InterruptedException
+   #45 = Utf8               lambda$main$1
+   #46 = Utf8               lambda$main$0
+   #47 = Utf8               <clinit>
+   #48 = Utf8               SourceFile
+   #49 = Utf8               CAS1.java
+   #50 = NameAndType        #24:#25       // "<init>":()V
+   #51 = NameAndType        #20:#21       // m:I
+   #52 = NameAndType        #22:#23       // atomic:Ljava/util/concurrent/atomic/AtomicInteger;
+   #53 = NameAndType        #76:#77       // incrementAndGet:()I
+   #54 = Utf8               java/lang/Thread
+   #55 = Utf8               BootstrapMethods
+   #56 = MethodHandle       #6:#78        // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #57 = MethodType         #25           //  ()V
+   #58 = MethodHandle       #6:#79        // invokestatic com/lsy/thread/cas/CAS1.lambda$main$0:()V
+   #59 = NameAndType        #80:#81       // run:()Ljava/lang/Runnable;
+   #60 = NameAndType        #24:#82       // "<init>":(Ljava/lang/Runnable;)V
+   #61 = NameAndType        #83:#25       // start:()V
+   #62 = NameAndType        #84:#25       // join:()V
+   #63 = Class              #85           // java/lang/System
+   #64 = NameAndType        #86:#87       // out:Ljava/io/PrintStream;
+   #65 = Class              #88           // java/io/PrintStream
+   #66 = NameAndType        #89:#90       // println:(I)V
+   #67 = MethodHandle       #6:#91        // invokestatic com/lsy/thread/cas/CAS1.lambda$main$1:()V
+   #68 = NameAndType        #92:#77       // get:()I
+   #69 = NameAndType        #32:#25       // increaseAtomic:()V
+   #70 = NameAndType        #31:#25       // increase:()V
+   #71 = Utf8               java/util/concurrent/atomic/AtomicInteger
+   #72 = NameAndType        #24:#90       // "<init>":(I)V
+   #73 = Utf8               com/lsy/thread/cas/CAS1
+   #74 = Utf8               java/lang/Object
+   #75 = Utf8               java/lang/InterruptedException
+   #76 = Utf8               incrementAndGet
+   #77 = Utf8               ()I
+   #78 = Methodref          #93.#94       // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #79 = Methodref          #18.#95       // com/lsy/thread/cas/CAS1.lambda$main$0:()V
+   #80 = Utf8               run
+   #81 = Utf8               ()Ljava/lang/Runnable;
+   #82 = Utf8               (Ljava/lang/Runnable;)V
+   #83 = Utf8               start
+   #84 = Utf8               join
+   #85 = Utf8               java/lang/System
+   #86 = Utf8               out
+   #87 = Utf8               Ljava/io/PrintStream;
+   #88 = Utf8               java/io/PrintStream
+   #89 = Utf8               println
+   #90 = Utf8               (I)V
+   #91 = Methodref          #18.#96       // com/lsy/thread/cas/CAS1.lambda$main$1:()V
+   #92 = Utf8               get
+   #93 = Class              #97           // java/lang/invoke/LambdaMetafactory
+   #94 = NameAndType        #98:#102      // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #95 = NameAndType        #46:#25       // lambda$main$0:()V
+   #96 = NameAndType        #45:#25       // lambda$main$1:()V
+   #97 = Utf8               java/lang/invoke/LambdaMetafactory
+   #98 = Utf8               metafactory
+   #99 = Class              #104          // java/lang/invoke/MethodHandles$Lookup
+  #100 = Utf8               Lookup
+  #101 = Utf8               InnerClasses
+  #102 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #103 = Class              #105          // java/lang/invoke/MethodHandles
+  #104 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #105 = Utf8               java/lang/invoke/MethodHandles
+{
+  public com.lsy.thread.cas.CAS1();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 5: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/lsy/thread/cas/CAS1;
+
+  public static void main(java.lang.String[]) throws java.lang.InterruptedException;
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=4, args_size=1
+         0: bipush        20
+         2: anewarray     #5                  // class java/lang/Thread
+         5: astore_1
+         6: iconst_0
+         7: istore_2
+         8: iload_2
+         9: bipush        20
+        11: if_icmpge     47
+        14: aload_1
+        15: iload_2
+        16: new           #5                  // class java/lang/Thread
+        19: dup
+        20: invokedynamic #6,  0              // InvokeDynamic #0:run:()Ljava/lang/Runnable;
+        25: invokespecial #7                  // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+        28: aastore
+        29: aload_1
+        30: iload_2
+        31: aaload
+        32: invokevirtual #8                  // Method java/lang/Thread.start:()V
+        35: aload_1
+        36: iload_2
+        37: aaload
+        38: invokevirtual #9                  // Method java/lang/Thread.join:()V
+        41: iinc          2, 1
+        44: goto          8
+        47: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        50: getstatic     #2                  // Field m:I
+        53: invokevirtual #11                 // Method java/io/PrintStream.println:(I)V
+        56: bipush        20
+        58: anewarray     #5                  // class java/lang/Thread
+        61: astore_2
+        62: iconst_0
+        63: istore_3
+        64: iload_3
+        65: bipush        20
+        67: if_icmpge     103
+        70: aload_2
+        71: iload_3
+        72: new           #5                  // class java/lang/Thread
+        75: dup
+        76: invokedynamic #12,  0             // InvokeDynamic #1:run:()Ljava/lang/Runnable;
+        81: invokespecial #7                  // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+        84: aastore
+        85: aload_2
+        86: iload_3
+        87: aaload
+        88: invokevirtual #8                  // Method java/lang/Thread.start:()V
+        91: aload_2
+        92: iload_3
+        93: aaload
+        94: invokevirtual #9                  // Method java/lang/Thread.join:()V
+        97: iinc          3, 1
+       100: goto          64
+       103: getstatic     #10                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       106: getstatic     #3                  // Field atomic:Ljava/util/concurrent/atomic/AtomicInteger;
+       109: invokevirtual #13                 // Method java/util/concurrent/atomic/AtomicInteger.get:()I
+       112: invokevirtual #11                 // Method java/io/PrintStream.println:(I)V
+       115: return
+      LineNumberTable:
+        line 25: 0
+        line 26: 6
+        line 27: 14
+        line 30: 29
+        line 31: 35
+        line 26: 41
+        line 33: 47
+        line 35: 56
+        line 36: 62
+        line 37: 70
+        line 40: 85
+        line 41: 91
+        line 36: 97
+        line 43: 103
+        line 44: 115
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            8      39     2     i   I
+           64      39     3     i   I
+            0     116     0  args   [Ljava/lang/String;
+            6     110     1     t   [Ljava/lang/Thread;
+           62      54     2    tf   [Ljava/lang/Thread;
+      StackMapTable: number_of_entries = 4
+        frame_type = 253 /* append */
+          offset_delta = 8
+          locals = [ class "[Ljava/lang/Thread;", int ]
+        frame_type = 250 /* chop */
+          offset_delta = 38
+        frame_type = 253 /* append */
+          offset_delta = 16
+          locals = [ class "[Ljava/lang/Thread;", int ]
+        frame_type = 250 /* chop */
+          offset_delta = 38
+    Exceptions:
+      throws java.lang.InterruptedException
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=3, locals=0, args_size=0
+         0: iconst_0
+         1: putstatic     #2                  // Field m:I
+         4: new           #16                 // class java/util/concurrent/atomic/AtomicInteger
+         7: dup
+         8: iconst_0
+         9: invokespecial #17                 // Method java/util/concurrent/atomic/AtomicInteger."<init>":(I)V
+        12: putstatic     #3                  // Field atomic:Ljava/util/concurrent/atomic/AtomicInteger;
+        15: return
+      LineNumberTable:
+        line 9: 0
+        line 13: 4
+}
+SourceFile: "CAS1.java"
+InnerClasses:
+     public static final #100= #99 of #103; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #56 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #57 ()V
+      #58 invokestatic com/lsy/thread/cas/CAS1.lambda$main$0:()V
+      #57 ()V
+  1: #56 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #57 ()V
+      #67 invokestatic com/lsy/thread/cas/CAS1.lambda$main$1:()V
+      #57 ()V

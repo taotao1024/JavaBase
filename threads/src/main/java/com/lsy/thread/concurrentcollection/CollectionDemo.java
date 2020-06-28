@@ -8,7 +8,7 @@ import java.util.Iterator;
  */
 public class CollectionDemo {
     public static void main(String[] args) {
-        ArrayList<User> list = new ArrayList<>();
+        ArrayList<User> list = new ArrayList<User>();
         for (int i = 0; i < 10; i++) {
             User user = new User(i, "User" + i);
             list.add(user);

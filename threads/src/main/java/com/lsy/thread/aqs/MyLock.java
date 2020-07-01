@@ -1,6 +1,5 @@
 package com.lsy.thread.aqs;
 
-import com.sun.xml.internal.bind.v2.model.annotation.Quick;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;

@@ -15,17 +15,23 @@
             <version>4.13</version>
         </dependency>
     </dependencies>
-    
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <!--mvn插件-->
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
+                    <!--编码-->
                     <encoding>UTF-8</encoding>
+                    <!--目标版本-->
                     <target>8</target>
+                    <!--代码版本-->
                     <source>8</source>
+                    <!--跳过单元测试-->
+                    <skip>true</skip>
                 </configuration>
             </plugin>
         </plugins>

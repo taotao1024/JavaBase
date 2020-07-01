@@ -6,27 +6,48 @@ import org.junit.runners.JUnit4;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-
-
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
 import java.util.concurrent.CountDownLatch;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- * TODO
- *
- * @author yuanYuan
- * @version 1.0
- * @date 2020/6/5
- */
+import static org.junit.Assert.*;
+
 @RunWith(JUnit4.class)
-public class HashMapSize {
+public class HashMapSizeTest {
+
     @Test
-    public void getSize() throws Exception {
+    public void getSize() {
+        System.out.println("1");
+    }
+
+    @Test
+    public void testIterator() {
+    }
+
+    @Test
+    public void testGetM() {
+    }
+
+    @Test
+    public void getNewM() {
+    }
+
+    @Test
+    public void getOldM() {
+    }
+
+    @Test
+    public void getSizeMax() {
+    }
+
+    @Test
+    public void testHash() {
+    }
+
+    @Test
+    public void testSizeAndCapactiy() throws Exception {
         HashMap<Integer, String> map = new HashMap<Integer, String>(4, 0.75f);
         map.put(1, "12");
         map.put(2, "12");
@@ -49,7 +70,7 @@ public class HashMapSize {
     }
 
     @Test
-    public void testIterator() {
+    public void testHashMapIterator() {
         Map<String, String> map = new HashMap<String, String>(4);
         map.put("1", "12");
         map.put("2", "12");
@@ -67,7 +88,7 @@ public class HashMapSize {
     }
 
     @Test
-    public void testGetM() {
+    public void testGetMorN() {
         System.out.println("第一组");
         System.out.println(this.GetOldM(3, 4));
         System.out.println(this.GetNewM(3, 4));
@@ -102,7 +123,7 @@ public class HashMapSize {
     }
 
     @Test
-    public void getSizeMax() throws Exception {
+    public void testSizeMaxAndCapacity() throws Exception {
 
         long startTime = System.currentTimeMillis();
         //模拟最大值
@@ -151,14 +172,10 @@ public class HashMapSize {
     }
 
     @Test
-    public void testHash() throws NoSuchFieldException, IllegalAccessException {
+    public void testHashCapacity() {
         int i = 3;
         if (i++ < 4 * 0.75) {
             System.out.println("不用扩容");
         }
-
-
     }
-
-
 }

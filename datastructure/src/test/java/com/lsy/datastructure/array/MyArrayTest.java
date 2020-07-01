@@ -4,16 +4,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import static org.junit.Assert.*;
 
-/**
- * TODO
- *
- * @author yuanYuan
- * @version 1.0
- * @date 2020/5/28
- */
 @RunWith(JUnit4.class)
-public class TestMyArray {
+public class MyArrayTest {
     /**
      * 数组长度
      */
@@ -26,16 +20,17 @@ public class TestMyArray {
     @Test
     public void testArrayRead() {
         this.array = new int[]{1, 2, 13, 24, 12, 34, 12, 3, 41, 234};
-        System.out.println(array[3]);
+        assertEquals(array.length, array.length);
+
+        assertEquals(array[3], 24);
     }
 
     @Test
     public void testArrayUpdata() {
         this.array = new int[]{1, 2, 13, 24, 12, 34, 12, 3, 41, 234};
-        System.out.println(array[3]);
+        assertEquals(array[3], 24);
         this.array[3] = 12;
-        System.out.println(array[3]);
+        assertEquals(array[3], 12);
     }
-
 
 }

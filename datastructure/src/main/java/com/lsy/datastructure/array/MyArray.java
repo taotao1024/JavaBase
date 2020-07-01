@@ -82,7 +82,6 @@ public class MyArray {
         myArray.insert(3, 13);
         //需要扩容
         myArray.insert(4, 14);
-
         myArray.delete(2);
         myArray.output();
     }

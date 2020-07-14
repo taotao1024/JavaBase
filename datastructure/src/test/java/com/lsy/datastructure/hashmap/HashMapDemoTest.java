@@ -9,42 +9,15 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.junit.Assert.*;
 
 @RunWith(JUnit4.class)
-public class HashMapSizeTest {
+public class HashMapDemoTest {
 
-    @Test
-    public void getSize() {
-        System.out.println("1");
-    }
-
-    @Test
-    public void testIterator() {
-    }
-
-    @Test
-    public void testGetM() {
-    }
-
-    @Test
-    public void getNewM() {
-    }
-
-    @Test
-    public void getOldM() {
-    }
-
-    @Test
-    public void getSizeMax() {
-    }
-
-    @Test
-    public void testHash() {
-    }
 
     @Test
     public void testSizeAndCapactiy() throws Exception {
@@ -72,14 +45,25 @@ public class HashMapSizeTest {
     @Test
     public void testHashMapIterator() {
         Map<String, String> map = new HashMap<String, String>(4);
-        map.put("1", "12");
-        map.put("2", "12");
-        map.put("3", "12");
-        map.put("4", "12");
-        map.put("5", "12");
+        map.put("1", "11");
+        map.put("2", "22");
+        map.put("3", "33");
+        map.put("4", "44");
+        map.put("5", "55");
         Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
         while (iterator.hasNext()) {
-            Map.Entry entry = iterator.next();
+            Map.Entry<String, String> next = iterator.next();
+            if (next.getKey().equals("1")||next.getKey().equals("2")){
+                iterator.remove();
+            }
+           /* Map.Entry entry = iterator.next();
+            Object key = entry.getKey();
+            Object value = entry.getValue();
+            System.out.println(key + " " + value);*/
+        }
+        Iterator<Map.Entry<String, String>> iteratorOut = map.entrySet().iterator();
+        while (iteratorOut.hasNext()) {
+            Map.Entry entry = iteratorOut.next();
             Object key = entry.getKey();
             Object value = entry.getValue();
             System.out.println(key + " " + value);

@@ -12,19 +12,20 @@ public enum EnumDemo {
      * 测试数据
      * 常量 在有在加载的时候才能实例化一次 方法区
      */
-    A,
+    TEST_A,
     /**
      * 测试数据
      */
-    B,
+    TEST_B,
     /**
      * 测试数据
      */
-    C,
+    TEST_C,
     /**
      * 测试数据
      */
-    D;
+    TEST_D;
+
     int init = 10;
 
     public void EnumDemo() {
@@ -35,11 +36,11 @@ public enum EnumDemo {
     }
 
     public static void main(String[] args) {
-        A.m1();
-        B.m1();
-        C.m1();
-        D.m1();
+        TEST_A.m1();
+        TEST_B.m1();
+        TEST_C.m1();
+        TEST_D.m1();
 
-        System.out.println(A.getClass().getName());
+        System.out.println(TEST_A.getClass().getName());
     }
 }

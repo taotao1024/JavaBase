@@ -10,6 +10,9 @@ package com.lsy.thread.singleton;
  * @author YY
  */
 public class EnumSingletonDemo {
+    /**
+     * 私有化构造函数
+     */
     private EnumSingletonDemo() {
     }
 

@@ -27,20 +27,22 @@ public class Main {
             new Order().createOrder();
             // 获取锁资源
             lock.lock();
-
-            // 减库存
-            Boolean result = new Stock().reduceStock();
-
-            // 释放锁资源
-            lock.unlock();
-
-            if (result) {
-                System.out.println(Thread.currentThread().getName() + "减库存成功");
-                // 支付
-                new Pay().pay();
-            } else {
-                System.out.println(Thread.currentThread().getName() + "减库存失败");
+            try {
+                // 减库存
+                Boolean result = new Stock().reduceStock();
+                if (result) {
+                    System.out.println(Thread.currentThread().getName() + " 减库存成功");
+                    // 支付
+                    new Pay().pay();
+                } else {
+                    System.out.println(Thread.currentThread().getName() + " 减库存失败");
+                }
+            } finally {
+                // 释放锁资源
+                lock.unlock();
             }
+
+
         }
     }
 }

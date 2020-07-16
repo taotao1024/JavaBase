@@ -9,6 +9,6 @@ public class Order {
      * 创建订单
      */
     public void createOrder() {
-        System.out.println(Thread.currentThread().getName() + "创建order");
+        System.out.println(Thread.currentThread().getName() + " 创建order");
     }
 }

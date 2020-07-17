@@ -1,5 +1,7 @@
 package com.lsy.lock.zklock;
 
+import org.apache.zookeeper.*;
+
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
@@ -26,14 +28,18 @@ public class ZkLock implements Lock {
      */
     @Override
     public void lock() {
-        this.init();
+        this.initZk();
+        // 尝试加锁
         if (tryLock()) {
             // 阻塞
             System.out.println(Thread.currentThread().getName()  + " 拿到锁了");
         }
+        // 进入等待 监听
+
+        // 再次尝试
     }
 
-    private void init() {
+    private void initZk() {
         if (zk.get() == null) {
             try {
                 zk.set(new ZooKeeper("120.79.134.119:2181"
@@ -108,6 +114,8 @@ public class ZkLock implements Lock {
                 System.out.println(Thread.currentThread().getName() + " 等待锁");
                 // 结束阻塞
                 countDownLatch.await();
+                // 再次尝试
+                //lock();
                 // 获取锁
                 return true;
             }

@@ -1,9 +1,7 @@
-package com.lsy.arithmetic.sort;
+package com.lsy.arithmetic.排序;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class 冒泡排序Test {
     int[] num0 = {2, 5, 1, 6, 71, 34, 32, 4};

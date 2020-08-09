@@ -1,4 +1,4 @@
-package com.lsy.arithmetic.other;
+package com.lsy.arithmetic.其他;
 
 public class Demo2 {
 

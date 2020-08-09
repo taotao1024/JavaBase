@@ -1,6 +1,4 @@
-package com.lsy.arithmetic.other;
-
-import java.util.HashMap;
+package com.lsy.arithmetic.其他;
 
 public class Demo3 {
 

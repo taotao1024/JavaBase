@@ -45,6 +45,7 @@ public class ConflictHashCodeTest2 {
             this.age = age;
         }
 
+        @Override
         public String toString() {
             return name + " - " + age;
         }

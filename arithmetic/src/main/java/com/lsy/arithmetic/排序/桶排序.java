@@ -1,6 +1,5 @@
-package com.lsy.arithmetic.sort;
+package com.lsy.arithmetic.排序;
 
-import javax.lang.model.element.VariableElement;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

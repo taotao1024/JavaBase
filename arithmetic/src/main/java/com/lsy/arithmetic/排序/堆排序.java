@@ -1,4 +1,4 @@
-package com.lsy.arithmetic.sort;
+package com.lsy.arithmetic.排序;
 
 import java.util.Arrays;
 

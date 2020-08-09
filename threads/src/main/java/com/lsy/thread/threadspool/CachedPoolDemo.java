@@ -11,6 +11,7 @@ public class CachedPoolDemo {
 
     public static void main(String[] args) {
         ExecutorService pool = Executors.newCachedThreadPool();
+        //noinspection AlibabaUndefineMagicConstant
         for (int i = 0; i < 10; i++) {
             //创建任务
             Runnable task = new TaskDemo();

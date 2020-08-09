@@ -47,9 +47,13 @@ public class EqualsTest2 {
         @Override
         public boolean equals(Object o) {
             // 如果地址相等
-            if (this == o) return true;
+            if (this == o) {
+                return true;
+            }
             // 如果对象为空、判断对象是否为同类型
-            if (o == null || getClass() != o.getClass()) return false;
+            if (o == null || getClass() != o.getClass()) {
+                return false;
+            }
             Person person = (Person) o;
             // 判断对象的内容
             return age == person.age && Objects.equals(name, person.name);

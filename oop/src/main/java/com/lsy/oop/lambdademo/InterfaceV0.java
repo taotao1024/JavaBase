@@ -1,18 +1,17 @@
 package com.lsy.oop.lambdademo;
 
 /**
+ * 函数式接口，只能有一个抽象方法。
+ *
  * @author YY
  */
 @FunctionalInterface
-public interface InterfaceLamdba {
+public interface InterfaceV0 {
     /**
      * 测试
      *
-     * @param s s
+     * @param s String
      */
     void getString(String s);
 
-    public static String setString(String s) {
-        return "s";
-    }
 }

@@ -20,7 +20,7 @@ public class ZkLock implements Lock {
      * 使用本地线程 保证线程安全。
      */
     private ThreadLocal<ZooKeeper> zk = new ThreadLocal<ZooKeeper>();
-    private String LOCK_NAME = "/zkLock";
+    private final String LOCK_NAME = "/zkLock";
     private ThreadLocal<String> CURRENT_NODE = new ThreadLocal<String>();
 
     /**

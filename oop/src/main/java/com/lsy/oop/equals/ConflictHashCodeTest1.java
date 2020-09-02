@@ -27,6 +27,8 @@ public class ConflictHashCodeTest1 {
     }
 
     /**
+     * 测试值重写equals() 不重写hash()方法
+     *
      * @desc Person类。
      */
     private static class Person {
@@ -37,6 +39,7 @@ public class ConflictHashCodeTest1 {
             this.name = name;
             this.age = age;
         }
+
         @Override
         public String toString() {
             return "(" + name + ", " + age + ")";

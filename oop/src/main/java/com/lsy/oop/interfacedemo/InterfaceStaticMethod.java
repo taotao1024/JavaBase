@@ -25,9 +25,11 @@ public interface InterfaceStaticMethod {
     }
 
     /**
+     * 测试接口的静态变量
+     * <p>
      * public static final int A_INTI = 1;
      */
-    String Interface_INTI = "init Value";
+    String INTERFACE_INTI = "init Value";
 
     /**
      * 获取A.value

@@ -22,7 +22,7 @@ public class InstantiationTest implements InterfaceStaticMethod {
 
     @Override
     public void getInit() {
-        System.out.println(InterfaceStaticMethod.Interface_INTI);
+        System.out.println(InterfaceStaticMethod.INTERFACE_INTI);
     }
 
     @Before

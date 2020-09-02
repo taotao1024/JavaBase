@@ -1,4 +1,4 @@
-package com.lsy.thread.distributed_lock;
+package com.lsy.thread.distributedlock;
 
 import java.util.concurrent.locks.Lock;
 

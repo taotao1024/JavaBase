@@ -26,7 +26,7 @@ public class MyArrayTest {
     }
 
     @Test
-    public void testArrayUpdata() {
+    public void testArrayUpdate() {
         this.array = new int[]{1, 2, 13, 24, 12, 34, 12, 3, 41, 234};
         assertEquals(array[3], 24);
         this.array[3] = 12;

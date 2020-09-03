@@ -12,6 +12,7 @@ import static org.junit.Assert.*;
 
 /**
  * 奖品发放服务测试
+ * @author TT
  */
 public class PrizeControllerTest {
 
@@ -25,7 +26,7 @@ public class PrizeControllerTest {
     PrizeController prizeController;
 
     @Before
-    public void TestBefore() {
+    public void testBefore() {
         prizeController = new PrizeController();
     }
 
@@ -33,7 +34,7 @@ public class PrizeControllerTest {
      * 模拟发放优惠券测试
      */
     @Test
-    public void test_awardToUser() {
+    public void testAwardToUser01() {
         System.out.println("模拟发放优惠券测试\n");
         // 模拟数据
         AwardReq awardRequest = new AwardReq();
@@ -51,7 +52,7 @@ public class PrizeControllerTest {
      * 模拟方法实物商品
      */
     @Test(timeout = 1000)
-    public void test_awardToUser_1() {
+    public void testAwardToUser02() {
         System.out.println("模拟方法实物商品\n");
         // 模拟数据
         AwardReq awardRequest = new AwardReq();
@@ -59,7 +60,7 @@ public class PrizeControllerTest {
         awardRequest.setAwardType(2);
         awardRequest.setAwardNumber("9820198721311");
         awardRequest.setBizId("1023000020112221113");
-        awardRequest.setExtMap(new HashMap<String, String>() {{
+        awardRequest.setExtMap(new HashMap<String, String>(4) {{
             put("consigneeUserName", "谢飞机");
             put("consigneeUserPhone", "15200292123");
             put("consigneeUserAddress", "山西省.显示市.莲湖区区.西关正街街道.檀溪苑小区.#18-2109");
@@ -74,7 +75,7 @@ public class PrizeControllerTest {
      * 模拟第三方兑换卡(爱奇艺)
      */
     @Test
-    public void test_awardToUser_3() {
+    public void testAwardToUser03() {
         System.out.println("第三方兑换卡(爱奇艺)\n");
         // 模拟数据
         AwardReq awardRequest = new AwardReq();

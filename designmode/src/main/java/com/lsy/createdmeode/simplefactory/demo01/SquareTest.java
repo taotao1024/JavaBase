@@ -14,6 +14,7 @@ import java.util.HashMap;
 
 /**
  * 运行器 测试组
+ * @author TT
  */
 @RunWith(Parameterized.class)
 public class SquareTest {
@@ -23,14 +24,14 @@ public class SquareTest {
     private AwardRes awardRes;
 
     @Parameters
-    public static Collection TestDataParameters() {
+    public static Collection testDataParameters() {
         // 模拟数据01
         AwardReq awardRequest01 = new AwardReq();
         awardRequest01.setuId("10001");
         awardRequest01.setAwardType(2);
         awardRequest01.setAwardNumber("9820198721311");
         awardRequest01.setBizId("1023000020112221113");
-        awardRequest01.setExtMap(new HashMap<String, String>() {{
+        awardRequest01.setExtMap(new HashMap<String, String>(4) {{
             put("consigneeUserName", "谢飞机");
             put("consigneeUserPhone", "15200292123");
             put("consigneeUserAddress", "山西省.显示市.莲湖区区.西关正街街道.檀溪苑小区.#18-2109");

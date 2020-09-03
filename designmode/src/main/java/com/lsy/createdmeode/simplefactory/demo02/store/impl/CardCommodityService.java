@@ -24,7 +24,6 @@ public class CardCommodityService implements ICommodity {
      */
     private IQiYiCardService iQiYiCardService = new IQiYiCardService();
 
-    @Override
     public void sendCommodity(String uId, String commodityId, String bizId, Map<String, String> extMap) throws Exception {
         iQiYiCardService.grantToken(queryUserMobile(uId), bizId);
 

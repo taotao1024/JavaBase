@@ -109,7 +109,7 @@ public class ClassLoaderUtils {
             return null;
         }
         if (clazz.isMemberClass() && !Modifier.isStatic(clazz.getModifiers())) {
-            Constructor constructorList[] = clazz.getDeclaredConstructors();
+            Constructor[] constructorList = clazz.getDeclaredConstructors();
             Constructor defaultConstructor = null;
             for (Constructor con : constructorList) {
                 if (con.getParameterTypes().length == 1) {

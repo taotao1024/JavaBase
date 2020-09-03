@@ -8,6 +8,8 @@ import java.math.BigDecimal;
 /**
  * 地砖
  * 品牌；马可波罗(MARCO POLO)
+ *
+ * @author TT
  */
 public class MarcoPoloTile implements Matter {
 

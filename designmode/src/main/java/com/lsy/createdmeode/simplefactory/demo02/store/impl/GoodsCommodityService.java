@@ -24,7 +24,6 @@ public class GoodsCommodityService implements ICommodity {
      */
     private GoodsService goodsService = new GoodsService();
 
-    @Override
     public void sendCommodity(String uId, String commodityId, String bizId, Map<String, String> extMap) throws Exception {
         // 数据封装
         DeliverReq deliverReq = new DeliverReq();

@@ -1,7 +1,10 @@
 package com.lsy.createdmeode.simplefactory.demo02;
 
-import com.lsy.createdmeode.simplefactory.demo02.store.ICommodity;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+import com.lsy.createdmeode.simplefactory.demo02.store.ICommodity;
 
 import java.util.HashMap;
 import java.util.Map;

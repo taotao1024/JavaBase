@@ -1,5 +1,6 @@
 package com.lsy.createdmeode.simplefactory.demo01;
 
+
 import com.alibaba.fastjson.JSON;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,6 +13,7 @@ import static org.junit.Assert.*;
 
 /**
  * 奖品发放服务测试
+ *
  * @author TT
  */
 public class PrizeControllerTest {

@@ -14,10 +14,13 @@ public class ConflictHashCodeTest1 {
         Person p2 = new Person("eee", 100);
         Person p3 = new Person("aaa", 200);
 
-        // 新建HashSet对象
+        // 新建HashSet对象 测试补充些HashCode
         HashSet set = new HashSet();
+        //noinspection MapOrSetKeyShouldOverrideHashCodeEquals
         set.add(p1);
+        //noinspection MapOrSetKeyShouldOverrideHashCodeEquals
         set.add(p2);
+        //noinspection MapOrSetKeyShouldOverrideHashCodeEquals
         set.add(p3);
 
         // 比较p1 和 p2， 并打印它们的hashCode()

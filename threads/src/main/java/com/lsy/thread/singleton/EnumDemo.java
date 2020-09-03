@@ -28,7 +28,7 @@ public enum EnumDemo {
 
     int init = 10;
 
-    public void EnumDemo() {
+    private EnumDemo() {
     }
 
     public void m1() {

@@ -28,6 +28,7 @@ public class CouponCommodityService implements ICommodity {
      */
     private final String SUCCESS = "0000";
 
+    @Override
     public void sendCommodity(String uId, String commodityId, String bizId, Map<String, String> extMap) throws Exception {
         CouponResult couponResult = couponService.sendCoupon(uId, commodityId, bizId);
 

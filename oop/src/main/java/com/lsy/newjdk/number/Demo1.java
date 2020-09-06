@@ -2,6 +2,7 @@ package com.lsy.newjdk.number;
 
 /**
  * 特殊声明
+ * JDK1.5
  *
  * @author TT
  */

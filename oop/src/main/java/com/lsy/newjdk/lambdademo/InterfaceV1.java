@@ -1,4 +1,4 @@
-package com.lsy.oop.lambdademo;
+package com.lsy.newjdk.lambdademo;
 
 /**
  * 函数式接口，只能有一个抽象方法。

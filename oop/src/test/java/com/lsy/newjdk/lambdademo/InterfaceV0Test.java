@@ -1,8 +1,6 @@
-package com.lsy.oop.lambdademo;
+package com.lsy.newjdk.lambdademo;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class InterfaceV0Test {
 

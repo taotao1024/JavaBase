@@ -25,7 +25,6 @@ public class MqAdapterTest {
         SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date parse = s.parse("2020-06-01 23:20:16");
 
-
         CreateAccount create_account = new CreateAccount();
         create_account.setNumber("100001");
         create_account.setAddress("河北省.廊坊市.广阳区.大学里职业技术学院");
@@ -38,10 +37,11 @@ public class MqAdapterTest {
         link01.put("bizTime", "accountDate");
         link01.put("desc", "desc");
         RebateInfo rebateInfo01 = MqAdapter.filter(create_account.toString(), link01);
+
         System.out.println("mq.create_account(适配前)" + create_account.toString());
         System.out.println("mq.create_account(适配后)" + JSON.toJSONString(rebateInfo01));
 
-        System.out.println("");
+        System.out.println(" ---------------- 手动分割 ---------------- ");
 
         OrderMq orderMq = new OrderMq();
         orderMq.setUid("100001");
@@ -54,6 +54,7 @@ public class MqAdapterTest {
         link02.put("bizId", "orderId");
         link02.put("bizTime", "createOrderTime");
         RebateInfo rebateInfo02 = MqAdapter.filter(orderMq.toString(), link02);
+
         System.out.println("mq.orderMq(适配前)" + orderMq.toString());
         System.out.println("mq.orderMq(适配后)" + JSON.toJSONString(rebateInfo02));
     }

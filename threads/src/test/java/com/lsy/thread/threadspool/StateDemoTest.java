@@ -6,13 +6,11 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
-import static org.junit.Assert.*;
-
 public class StateDemoTest {
 
     @Test
     public void testPath01() {
-        String path = StateDemoTest.class.getClassLoader().getResource("a.text").getPath();
+        String path = StateDemoTest.class.getClassLoader().getResource("test/a.text").getPath();
         System.out.println(path);
     }
 

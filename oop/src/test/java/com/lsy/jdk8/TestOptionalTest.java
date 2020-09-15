@@ -1,6 +1,6 @@
-package com.lsy.newjdk;
+package com.lsy.jdk8;
 
-import com.lsy.newjdk.optional.TestOptional;
+import com.lsy.jdk8.optional.TestOptional;
 import org.junit.Test;
 
 /**

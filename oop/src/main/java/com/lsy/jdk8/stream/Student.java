@@ -1,4 +1,4 @@
-package com.lsy.newjdk.stream;
+package com.lsy.jdk8.stream;
 
 /**
  * @author TT

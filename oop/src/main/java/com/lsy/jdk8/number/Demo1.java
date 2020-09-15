@@ -1,4 +1,4 @@
-package com.lsy.newjdk.number;
+package com.lsy.jdk8.number;
 
 /**
  * 特殊声明

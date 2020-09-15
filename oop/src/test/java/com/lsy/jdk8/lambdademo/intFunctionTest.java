@@ -1,4 +1,4 @@
-package com.lsy.newjdk.lambdademo;
+package com.lsy.jdk8.lambdademo;
 
 import org.junit.Test;
 

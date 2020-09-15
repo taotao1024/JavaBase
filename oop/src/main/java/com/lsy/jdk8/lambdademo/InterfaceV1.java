@@ -1,4 +1,4 @@
-package com.lsy.newjdk.lambdademo;
+package com.lsy.jdk8.lambdademo;
 
 /**
  * 函数式接口，只能有一个抽象方法。
@@ -6,12 +6,12 @@ package com.lsy.newjdk.lambdademo;
  * @author YY
  */
 @FunctionalInterface
-public interface InterfaceV0 {
+public interface InterfaceV1 {
     /**
      * 测试
      *
      * @param s String
      */
-    void getString(String s);
+    void printUtils(String s);
 
 }

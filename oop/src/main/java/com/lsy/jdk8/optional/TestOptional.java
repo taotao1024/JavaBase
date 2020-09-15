@@ -1,4 +1,4 @@
-package com.lsy.newjdk.optional;
+package com.lsy.jdk8.optional;
 
 import java.util.Optional;
 

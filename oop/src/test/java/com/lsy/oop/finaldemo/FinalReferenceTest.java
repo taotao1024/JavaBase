@@ -6,6 +6,9 @@ import java.util.Arrays;
 
 import static org.junit.Assert.*;
 
+/**
+ * FinalReference测试类
+ */
 public class FinalReferenceTest {
 
     @Test

@@ -11,6 +11,9 @@ public class FinalReference {
 
 }
 
+/**
+ * 内部类：final引用变量测试
+ */
 class Person {
     private int age;
 

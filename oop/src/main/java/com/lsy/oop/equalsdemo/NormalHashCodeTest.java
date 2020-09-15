@@ -1,4 +1,4 @@
-package com.lsy.oop.equals;
+package com.lsy.oop.equalsdemo;
 
 import java.util.Objects;
 

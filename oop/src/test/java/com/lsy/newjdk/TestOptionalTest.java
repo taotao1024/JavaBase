@@ -3,6 +3,9 @@ package com.lsy.newjdk;
 import com.lsy.newjdk.optional.TestOptional;
 import org.junit.Test;
 
+/**
+ * TestOptional测试类
+ */
 public class TestOptionalTest {
     TestOptional testOptional = new TestOptional();
 

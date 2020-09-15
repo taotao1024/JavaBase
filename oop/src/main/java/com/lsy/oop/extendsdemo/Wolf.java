@@ -1,4 +1,4 @@
-package com.lsy.oop.extend;
+package com.lsy.oop.extendsdemo;
 
 /**
  * TODO

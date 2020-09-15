@@ -1,18 +1,16 @@
-package com.lsy.oop;
+package com.lsy.newjdk;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import static org.junit.Assert.*;
+
 /**
- * TODO
- *
- * @author yuanYuan
- * @version 1.0
- * @date 2020/6/13
+ * TryCatch测试类
  */
 @RunWith(JUnit4.class)
-public class TryCatch {
+public class TryCatchTest {
     @Test
     public void testTryCatch() {
 

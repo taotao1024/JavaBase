@@ -1,4 +1,4 @@
-package com.lsy.oop.extend;
+package com.lsy.oop.extendsdemo;
 
 /**
  * 构造器
@@ -17,10 +17,10 @@ public class Base {
     }
 }
 
-class sub extends Base {
+class Sub extends Base {
     public String name;
 
-    public sub(double size, double age, String name) {
+    public Sub(double size, double age, String name) {
         super(size, age);
         this.name = name;
     }

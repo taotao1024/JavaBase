@@ -1,14 +1,15 @@
-package com.lsy.oop.extend;
+package com.lsy.oop.extendsdemo;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
+/**
+ * Wolf测试类
+ */
 public class WolfTest {
 
 
     @Test
-    public void test(){
+    public void test() {
         new Wolf();
     }
 

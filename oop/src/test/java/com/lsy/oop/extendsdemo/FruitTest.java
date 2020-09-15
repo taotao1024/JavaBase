@@ -1,9 +1,10 @@
-package com.lsy.oop.extend;
+package com.lsy.oop.extendsdemo;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
+/**
+ * Fruit测试类
+ */
 public class FruitTest {
 
     @Test

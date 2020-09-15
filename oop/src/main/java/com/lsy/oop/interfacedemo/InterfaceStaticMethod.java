@@ -9,9 +9,19 @@ import java.nio.file.Path;
  * @author TT
  */
 public interface InterfaceStaticMethod {
+    /**
+     * 测试接口的静态变量
+     * <p>
+     * public static final int A_INTI = 1;
+     */
+    String INTERFACE_INTI = "init Value";
 
     /**
      * 接口的默认方法1
+     * <p>
+     * default方法不能使用Static修饰
+     * <p>
+     * public  default void defaultMethod()
      */
     default void defaultMethod() {
         System.out.println("我是接口的默认方法(重写前)");
@@ -24,12 +34,6 @@ public interface InterfaceStaticMethod {
         System.out.println("没重写的默认方法(重写前)");
     }
 
-    /**
-     * 测试接口的静态变量
-     * <p>
-     * public static final int A_INTI = 1;
-     */
-    String INTERFACE_INTI = "init Value";
 
     /**
      * 获取A.value
@@ -39,7 +43,8 @@ public interface InterfaceStaticMethod {
     void getInit();
 
     /**
-     * Java SE8 支持静态方法
+     * Java SE8 支持类方法 类方法必须使用static修饰
+     * 类方法不能使用default修饰，且总是使用public修饰
      * <p>
      * 接口的静态方法依旧属于接口，只能由接口自己调用。
      *

@@ -2,18 +2,14 @@ package com.lsy.oop.interfacedemo;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
 import java.nio.file.Path;
 
+import static org.junit.Assert.*;
 
-/**
- * @author TT
- */
-@RunWith(JUnit4.class)
-public class InstantiationTest implements InterfaceStaticMethod {
-    InstantiationTest instantiationTest;
+public class InterfaceStaticMethodTest implements InterfaceStaticMethod {
+
+    InterfaceStaticMethodTest instantiationTest;
 
     @Override
     public void defaultMethod() {
@@ -27,7 +23,7 @@ public class InstantiationTest implements InterfaceStaticMethod {
 
     @Before
     public void before() {
-        instantiationTest = new InstantiationTest();
+        instantiationTest = new InterfaceStaticMethodTest();
     }
 
     @Test

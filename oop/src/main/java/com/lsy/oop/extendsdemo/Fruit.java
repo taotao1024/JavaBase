@@ -15,6 +15,9 @@ public class Fruit {
     }
 }
 
+/**
+ * 互相独立的普通的类
+ */
 class Apple extends Fruit {
 
 }

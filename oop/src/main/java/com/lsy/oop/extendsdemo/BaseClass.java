@@ -11,6 +11,9 @@ public class BaseClass {
     public int a = 1;
 }
 
+/**
+ * 互相独立的普通的类
+ */
 class SubClass extends BaseClass {
     public int a = 10;
 

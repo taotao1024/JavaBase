@@ -19,8 +19,10 @@ public class CreateFinalClass {
     }
 }
 
+
 /**
- * 内部类：成员变量为引用变量
+ * 互相独立的普通的类
+ * 成员变量为引用变量
  */
 class Name {
     private String firstName;

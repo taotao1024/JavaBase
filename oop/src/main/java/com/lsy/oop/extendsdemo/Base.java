@@ -17,6 +17,9 @@ public class Base {
     }
 }
 
+/**
+ * 互相独立的普通的类
+ */
 class Sub extends Base {
     public String name;
 

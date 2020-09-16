@@ -47,7 +47,7 @@ public class Demo01 {
 }
 
 /**
- * 内部类 引用类型
+ * 互相独立的普通的类
  */
 class Man {
     /**

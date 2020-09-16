@@ -12,8 +12,10 @@ public class PrivateFinalMethod {
     }
 }
 
+
 /**
- * 内部类：继承Final类
+ * 互相独立的普通的类
+ * 继承Final类
  */
 class Sub extends PrivateFinalMethod {
     private final void testPrivateFinalMethod() {

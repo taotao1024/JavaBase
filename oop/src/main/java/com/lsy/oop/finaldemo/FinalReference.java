@@ -12,7 +12,8 @@ public class FinalReference {
 }
 
 /**
- * 内部类：final引用变量测试
+ * 互相独立的普通的类
+ * final引用变量测试
  */
 class Person {
     private int age;

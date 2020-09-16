@@ -13,6 +13,9 @@ public class Bird {
     }
 }
 
+/**
+ * 互相独立的普通的类
+ */
 class Ostrich extends Bird {
     @Override
     public void fly() {

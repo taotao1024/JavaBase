@@ -246,6 +246,12 @@
             <artifactId>jcommander</artifactId>
             <version>1.72</version>
         </dependency>
+        <!-- Dom4j 解析器 -->
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
     </dependencies>
 
 </project>

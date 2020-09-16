@@ -1,5 +1,11 @@
 package com.lsy.behaviormodeo.iterator.demo02.lang;
 
+/**
+ * 自定义集合
+ *
+ * @param <E> element
+ * @param <L> link
+ */
 public interface Collection<E, L> extends Iterable<E> {
 
     boolean add(E e);

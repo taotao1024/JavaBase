@@ -2,11 +2,18 @@ package com.lsy.behaviormodeo.iterator.demo02.group;
 
 /**
  * 树节点链路
+ * @author TT
  */
 public class Link {
 
-    private String fromId; // 雇员ID
-    private String toId;   // 雇员ID
+    /**
+     * 雇员ID
+     */
+    private String fromId;
+    /**
+     * 雇员ID
+     */
+    private String toId;
 
     public Link(String fromId, String toId) {
         this.fromId = fromId;
@@ -28,5 +35,5 @@ public class Link {
     public void setToId(String toId) {
         this.toId = toId;
     }
-    
+
 }

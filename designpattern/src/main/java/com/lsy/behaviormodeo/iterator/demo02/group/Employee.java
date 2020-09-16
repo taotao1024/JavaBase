@@ -2,12 +2,22 @@ package com.lsy.behaviormodeo.iterator.demo02.group;
 
 /**
  * 雇员
+ * @author TT
  */
 public class Employee {
 
-    private String uId;   // ID
-    private String name;  // 姓名
-    private String desc;  // 备注
+    /**
+     * ID
+     */
+    private String uId;
+    /**
+     * 姓名
+     */
+    private String name;
+    /**
+     * 备注
+     */
+    private String desc;
 
     public Employee(String uId, String name) {
         this.uId = uId;

@@ -12,9 +12,14 @@ package com.lsy.behaviormodeo.command.demo02.cuisine;
  * 06、浙江（浙菜）——中国最古老的菜系之一，宫廷第三大菜系。
  * 07、湖南（湘菜）——民间第三大菜系。
  * 08、安徽（徽菜）——徽州文化的典型代表。
+ *
+ * @author TT
  */
 public interface ICuisine {
 
-    void cook(); // 烹调、制作
+    /**
+     * 烹调、制作
+     */
+    void cook();
 
 }

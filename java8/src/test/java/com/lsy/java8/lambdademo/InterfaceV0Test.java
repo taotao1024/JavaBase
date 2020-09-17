@@ -1,8 +1,14 @@
-package com.lsy.jdk8.lambdademo;
+package com.lsy.java8.lambdademo;
 
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+
 public class InterfaceV0Test {
+
+    @Test
+    public void getString() {
+    }
 
     @Test
     public void testGetString() {

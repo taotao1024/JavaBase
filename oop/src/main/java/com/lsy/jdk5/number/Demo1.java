@@ -1,8 +1,9 @@
-package com.lsy.jdk8.number;
+package com.lsy.jdk5.number;
 
 /**
- * 特殊声明
- * JDK1.5
+ * 特殊声明(JDK1.5)
+ * <p>
+ * 方便大数据的识别
  *
  * @author TT
  */

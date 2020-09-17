@@ -1,4 +1,4 @@
-package com.lsy.jdk8.stream;
+package com.lsy.java8.stream;
 
 import com.google.common.collect.Lists;
 

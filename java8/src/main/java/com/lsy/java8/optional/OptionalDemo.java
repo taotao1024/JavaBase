@@ -1,11 +1,15 @@
-package com.lsy.jdk8.optional;
+package com.lsy.java8.optional;
 
 import java.util.Optional;
 
 /**
- * @author TT
+ * OptionDemo
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/17
  */
-public class TestOptional {
+public class OptionalDemo {
 
     public void testNoNull(String name) {
         Optional<String> optional = Optional.of(name);

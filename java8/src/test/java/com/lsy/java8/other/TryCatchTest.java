@@ -1,13 +1,9 @@
-package com.lsy.jdk8;
+package com.lsy.java8.other;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
-/**
- * TryCatch测试类
- */
-@RunWith(JUnit4.class)
+import static org.junit.Assert.*;
+
 public class TryCatchTest {
     @Test
     public void testTryCatch() {

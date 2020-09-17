@@ -1,9 +1,12 @@
-package com.lsy.jdk8.lambdademo;
+package com.lsy.java8.lambdademo;
+
 
 /**
  * 函数式接口，只能有一个抽象方法。
  *
- * @author YY
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/17
  */
 @FunctionalInterface
 public interface InterfaceV0 {

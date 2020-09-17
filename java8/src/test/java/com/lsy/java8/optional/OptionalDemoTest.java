@@ -1,13 +1,11 @@
-package com.lsy.jdk8;
+package com.lsy.java8.optional;
 
-import com.lsy.jdk8.optional.TestOptional;
 import org.junit.Test;
 
-/**
- * TestOptional测试类
- */
-public class TestOptionalTest {
-    TestOptional testOptional = new TestOptional();
+import static org.junit.Assert.*;
+
+public class OptionalDemoTest {
+    OptionalDemo testOptional = new OptionalDemo();
 
     @Test(expected = NullPointerException.class)
     public void testNoNull() {

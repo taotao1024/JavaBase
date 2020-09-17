@@ -1,8 +1,9 @@
-package com.lsy.simplefactory;
+package com.lsy.createdmode.simplefactory.demo03;
 
-import com.lsy.simplefactory.base.BaseOperation;
-import com.lsy.simplefactory.base.impl.OpeartionAdd;
-import com.lsy.simplefactory.base.impl.OpeartionSub;
+
+import com.lsy.createdmode.simplefactory.demo03.base.BaseOperation;
+import com.lsy.createdmode.simplefactory.demo03.base.OpeartionAdd;
+import com.lsy.createdmode.simplefactory.demo03.base.OpeartionSub;
 
 /**
  * 运算类工厂

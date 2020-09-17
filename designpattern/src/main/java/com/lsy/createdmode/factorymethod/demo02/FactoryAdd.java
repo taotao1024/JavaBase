@@ -1,7 +1,4 @@
-package com.lsy.factorymethod.base.impl;
-
-import com.lsy.factorymethod.base.BaseFactory;
-import com.lsy.factorymethod.base.BaseOperation;
+package com.lsy.createdmode.factorymethod.demo02;
 
 /**
  * 子工厂完成具体的实例化

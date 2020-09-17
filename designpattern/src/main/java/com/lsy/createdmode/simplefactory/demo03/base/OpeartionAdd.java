@@ -1,6 +1,4 @@
-package com.lsy.simplefactory.base.impl;
-
-import com.lsy.simplefactory.base.BaseOperation;
+package com.lsy.createdmode.simplefactory.demo03.base;
 
 /**
  * TODO

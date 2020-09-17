@@ -1,6 +1,5 @@
-package com.lsy.strategypattern.base.impl;
+package com.lsy.behaviormode.strategy.demo03.base;
 
-import com.lsy.strategypattern.base.BaseStrategy;
 
 /**
  * TODO

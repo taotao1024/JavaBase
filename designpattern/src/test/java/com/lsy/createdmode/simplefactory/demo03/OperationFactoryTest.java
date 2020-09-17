@@ -1,9 +1,9 @@
-package com.lsy.simplefactory;
+package com.lsy.createdmode.simplefactory.demo03;
 
-import com.lsy.simplefactory.base.BaseOperation;
+import com.lsy.createdmode.simplefactory.demo03.base.BaseOperation;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+
+import static org.junit.Assert.*;
 
 /**
  * 简单工厂完成了类的实例化，并且包含了必要的逻辑，降低了客户端和工厂的解耦。
@@ -12,8 +12,11 @@ import org.junit.runners.JUnit4;
  * @version 1.0
  * @date 2020/6/12
  */
-@RunWith(JUnit4.class)
 public class OperationFactoryTest {
+
+    @Test
+    public void createFactory() {
+    }
 
     @Test
     public void testFactoryAdd() {

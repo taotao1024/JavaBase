@@ -1,4 +1,4 @@
-package com.lsy.factorymethod.base;
+package com.lsy.createdmode.factorymethod.demo02;
 
 
 /**

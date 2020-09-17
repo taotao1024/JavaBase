@@ -1,4 +1,4 @@
-package com.lsy.strategypattern.base;
+package com.lsy.behaviormode.strategy.demo03.base;
 
 /**
  * TODO

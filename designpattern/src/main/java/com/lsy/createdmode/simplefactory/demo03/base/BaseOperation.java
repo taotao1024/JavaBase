@@ -1,4 +1,4 @@
-package com.lsy.factorymethod.base;
+package com.lsy.createdmode.simplefactory.demo03.base;
 
 /**
  * TODO

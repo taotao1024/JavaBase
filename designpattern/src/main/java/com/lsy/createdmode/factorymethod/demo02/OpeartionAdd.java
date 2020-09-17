@@ -1,7 +1,5 @@
-package com.lsy.factorymethod.base.impl;
+package com.lsy.createdmode.factorymethod.demo02;
 
-
-import com.lsy.factorymethod.base.BaseOperation;
 
 /**
  * TODO

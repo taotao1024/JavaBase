@@ -1,10 +1,8 @@
-package com.lsy.factorymethod;
+package com.lsy.createdmode.factorymethod.demo02;
 
-import com.lsy.factorymethod.base.BaseOperation;
-import com.lsy.factorymethod.base.impl.FactoryAdd;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
+
+import static org.junit.Assert.*;
 
 /**
  * 简单工厂违反开闭原则。
@@ -17,8 +15,11 @@ import org.junit.runners.JUnit4;
  * @version 1.0
  * @date 2020/6/12
  */
-@RunWith(JUnit4.class)
-public class FactoryTest {
+public class FactoryAddTest {
+
+    @Test
+    public void createFactory() {
+    }
 
     @Test
     public void testFactoryAdd() {

@@ -19,7 +19,7 @@ public class Admin {
     private Map<String, ConfigMemento> mementoMap = new ConcurrentHashMap<String, ConfigMemento>();
 
     /**
-     * 追加
+     * 存放
      *
      * @param memento 备忘录
      */
@@ -30,7 +30,7 @@ public class Admin {
     }
 
     /**
-     * 撤销、还原
+     * 返回、撤销
      *
      * @return 配置备忘录
      */
@@ -50,7 +50,7 @@ public class Admin {
     }
 
     /**
-     * 获取备忘录
+     * 获取
      *
      * @param versionNo 版本号
      * @return 配置备忘录

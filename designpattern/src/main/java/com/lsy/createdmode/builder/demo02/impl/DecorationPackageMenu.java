@@ -39,7 +39,7 @@ public class DecorationPackageMenu implements IMenu {
     }
 
     /**
-     * 构造函数
+     * 构造方法
      *
      * @param area  面积
      * @param grade 级别

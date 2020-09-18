@@ -15,7 +15,7 @@ public class Context<T> {
     private ICouponDiscount<T> couponDiscount;
 
     /**
-     * 构造函数
+     * 构造方法
      *
      * @param couponDiscount 折扣方式
      */

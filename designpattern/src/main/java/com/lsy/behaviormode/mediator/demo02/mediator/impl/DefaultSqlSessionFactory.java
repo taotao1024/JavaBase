@@ -14,7 +14,7 @@ public class DefaultSqlSessionFactory implements SqlSessionFactory {
     private final Configuration configuration;
 
     /**
-     * 通过构造函数向下传递Configuration配置文件
+     * 通过构造方法向下传递Configuration配置文件
      *
      * @param configuration 配置文件
      */

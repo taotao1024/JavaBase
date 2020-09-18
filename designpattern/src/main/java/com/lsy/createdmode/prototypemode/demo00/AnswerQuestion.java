@@ -16,13 +16,13 @@ public class AnswerQuestion {
     private String key;
 
     /**
-     * 午餐构造函数
+     * 午餐构造方法
      */
     public AnswerQuestion() {
     }
 
     /**
-     * 有参构造函数
+     * 有参构造方法
      *
      * @param name 题目名称
      * @param key  答案

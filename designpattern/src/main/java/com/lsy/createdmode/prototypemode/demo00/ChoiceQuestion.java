@@ -22,13 +22,13 @@ public class ChoiceQuestion {
     private String key;
 
     /**
-     * 无参构造函数
+     * 无参构造方法
      */
     public ChoiceQuestion() {
     }
 
     /**
-     * 有参构造函数
+     * 有参构造方法
      *
      * @param name   题目名称
      * @param option 选项

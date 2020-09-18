@@ -11,11 +11,11 @@ import java.util.Optional;
  */
 public class OptionalDemo {
 
-    public void testNoNull(String name) {
+    public void testNoNullV1(String name) {
         Optional<String> optional = Optional.of(name);
     }
 
-    public void testHasNull(String name) {
+    public void testHasNullV2(String name) {
         Optional<String> optional = Optional.ofNullable(name);
         optional.orElse("init Name");
         System.out.println(optional.toString());

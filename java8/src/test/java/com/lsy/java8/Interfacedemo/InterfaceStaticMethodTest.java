@@ -1,14 +1,17 @@
-package com.lsy.oop.interfacedemo;
+package com.lsy.java8.Interfacedemo;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
 public class InterfaceStaticMethodTest implements InterfaceStaticMethod {
-
     InterfaceStaticMethodTest instantiationTest;
 
     @Override
@@ -53,5 +56,17 @@ public class InterfaceStaticMethodTest implements InterfaceStaticMethod {
     @Test
     public void testDefaultMethodV1() {
         instantiationTest.defaultMethodV1();
+    }
+
+    @Test
+    public void testDefaultSort() {
+        ArrayList<String> array = new ArrayList<>();
+        array.add("5");
+        array.add("3");
+        array.add("1");
+        array.add("2");
+        array.add("4");
+        Collections.sort(array);
+        System.out.println(array);
     }
 }

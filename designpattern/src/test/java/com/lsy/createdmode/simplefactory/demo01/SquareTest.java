@@ -56,7 +56,7 @@ public class SquareTest {
     }
 
     /**
-     * 构造函数，对变量进行初始化
+     * 构造方法，对变量进行初始化
      *
      * @param param  入参
      * @param result 结果

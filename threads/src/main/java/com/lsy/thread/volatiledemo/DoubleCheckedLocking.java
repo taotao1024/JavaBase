@@ -6,7 +6,7 @@ package com.lsy.thread.volatiledemo;
  */
 public class DoubleCheckedLocking {
     /**
-     * 私有化构造函数
+     * 私有化构造方法
      */
     private DoubleCheckedLocking() {
 

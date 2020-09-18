@@ -17,7 +17,7 @@ public class DoubleCheckedLocking {
     Socket socket;
 
     /**
-     * 私有化构造函数
+     * 私有化构造方法
      */
     private DoubleCheckedLocking() {
     }

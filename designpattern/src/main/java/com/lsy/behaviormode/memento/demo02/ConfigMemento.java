@@ -11,7 +11,7 @@ package com.lsy.behaviormode.memento.demo02;
  */
 public class ConfigMemento {
     /**
-     * 构造函数
+     * 构造方法
      *
      * @param configFile 配置文件
      */

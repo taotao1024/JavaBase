@@ -11,7 +11,7 @@ package com.lsy.thread.singleton;
  */
 public class EnumSingletonDemo {
     /**
-     * 私有化构造函数
+     * 私有化构造方法
      */
     private EnumSingletonDemo() {
     }

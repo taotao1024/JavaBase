@@ -16,7 +16,7 @@ public class QuestionBankController {
     private QuestionBank questionBank = new QuestionBank();
 
     /**
-     * 构造函数，开始创建题目
+     * 构造方法，开始创建题目
      */
     public QuestionBankController() {
         Map<String, String> map01 = new HashMap<String, String>();

@@ -9,12 +9,12 @@ public class OptionalDemoTest {
 
     @Test(expected = NullPointerException.class)
     public void testNoNull() {
-        testOptional.testNoNull(null);
+        testOptional.testNoNullV1(null);
     }
 
     @Test
     public void testHasNull() {
-        testOptional.testHasNull(null);
+        testOptional.testHasNullV2(null);
     }
 
     @Test

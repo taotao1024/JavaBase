@@ -1,4 +1,4 @@
-package com.lsy.oop.interfacedemo;
+package com.lsy.java8.Interfacedemo;
 
 
 import java.nio.file.FileSystems;
@@ -6,7 +6,11 @@ import java.nio.file.Path;
 
 
 /**
- * @author TT
+ * JDK8中为接口引入"静态方法"
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/17
  */
 public interface InterfaceStaticMethod {
     /**

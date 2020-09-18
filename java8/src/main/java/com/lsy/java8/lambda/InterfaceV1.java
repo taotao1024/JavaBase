@@ -1,4 +1,4 @@
-package com.lsy.java8.lambdademo;
+package com.lsy.java8.lambda;
 
 /**
  * 函数式接口，只能有一个抽象方法。

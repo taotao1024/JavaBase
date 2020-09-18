@@ -60,7 +60,7 @@ class Person {
     private String name;
 
     /**
-     * 构造函数
+     * 构造方法
      *
      * @param name 姓名
      */

@@ -97,7 +97,7 @@ public class ClassLoaderUtils {
     }
 
     /**
-     * 实例化一个对象(只检测默认构造函数，其它不管）
+     * 实例化一个对象(只检测默认构造方法，其它不管）
      *
      * @param clazz 对象类
      * @param <T>   对象具体类

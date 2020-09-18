@@ -1,4 +1,4 @@
-package com.lsy.jdk5.number;
+package com.lsy.oop.jdk5.number;
 
 /**
  * 特殊声明(JDK1.5)

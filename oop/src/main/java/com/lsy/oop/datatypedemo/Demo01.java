@@ -56,7 +56,7 @@ class Man {
     private String name;
 
     /**
-     * 有参构造函数
+     * 有参构造方法
      *
      * @param name 姓名
      */

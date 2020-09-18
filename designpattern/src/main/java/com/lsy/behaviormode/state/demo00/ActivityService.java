@@ -4,10 +4,25 @@ import java.util.Date;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * 活动服务
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/18
+ */
 public class ActivityService {
-
+    /**
+     * 状态Map
+     */
     private static Map<String, Enum<Status>> statusMap = new ConcurrentHashMap<String, Enum<Status>>();
 
+    /**
+     * 初始化
+     *
+     * @param activityId 活动ID
+     * @param status     状态枚举
+     */
     public static void init(String activityId, Enum<Status> status) {
         // 模拟查询活动信息
         ActivityInfo activityInfo = new ActivityInfo();

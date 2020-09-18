@@ -2,6 +2,13 @@ package com.lsy.behaviormode.state.demo00;
 
 import java.util.Date;
 
+/**
+ * 活动对象
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/18
+ */
 public class ActivityInfo {
 
     private String activityId;    // 活动ID

@@ -5,6 +5,13 @@ import com.lsy.behaviormode.observer.demo02.event.EventManager;
 import com.lsy.behaviormode.observer.demo02.event.listener.MQEventListener;
 import com.lsy.behaviormode.observer.demo02.event.listener.MessageEventListener;
 
+/**
+ * TODO
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/17
+ */
 public abstract class BaseLotteryService {
 
     private EventManager eventManager;
@@ -23,6 +30,12 @@ public abstract class BaseLotteryService {
         return lotteryResult;
     }
 
+    /**
+     * TODO
+     *
+     * @param uId UID
+     * @return 实体对象
+     */
     protected abstract LotteryResult doDraw(String uId);
 
 }

@@ -4,6 +4,13 @@ import com.lsy.behaviormode.observer.demo02.LotteryResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * TODO
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/17
+ */
 public class MQEventListener implements EventListener {
 
     private Logger logger = LoggerFactory.getLogger(MQEventListener.class);

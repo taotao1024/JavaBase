@@ -9,6 +9,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * TODO
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/17
+ */
 public class EventManager {
 
     Map<Enum<EventType>, List<EventListener>> listeners = new HashMap<>();
@@ -20,7 +27,10 @@ public class EventManager {
     }
 
     public enum EventType {
-        MQ, Message
+        // 消息通知
+        MQ,
+        // 本地消息
+        Message
     }
 
     /**

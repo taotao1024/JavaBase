@@ -18,6 +18,7 @@ public class LotteryServiceImpl implements LotteryService {
 
     private MinibusTargetService minibusTargetService = new MinibusTargetService();
 
+    @Override
     public LotteryResult doDraw(String uId) {
         // 摇号
         String lottery = minibusTargetService.lottery(uId);

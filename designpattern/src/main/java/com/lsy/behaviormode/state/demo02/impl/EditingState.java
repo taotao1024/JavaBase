@@ -3,22 +3,29 @@ package com.lsy.behaviormode.state.demo02.impl;
 import com.lsy.behaviormode.state.demo00.ActivityService;
 import com.lsy.behaviormode.state.demo00.Status;
 import com.lsy.behaviormode.state.demo02.Result;
-import com.lsy.behaviormode.state.demo02.State;
+import com.lsy.behaviormode.state.demo02.BaseState;
 
 /**
  * 活动状态；编辑中
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/18
  */
-public class EditingState extends State {
+public class EditingState extends BaseState {
 
+    @Override
     public Result arraignment(String activityId, Enum<Status> currentStatus) {
         ActivityService.execStatus(activityId, currentStatus, Status.Check);
         return new Result("0000", "活动提审成功");
     }
 
+    @Override
     public Result checkPass(String activityId, Enum<Status> currentStatus) {
         return new Result("0001", "编辑中不可审核通过");
     }
 
+    @Override
     public Result checkRefuse(String activityId, Enum<Status> currentStatus) {
         return new Result("0001", "编辑中不可审核拒绝");
     }
@@ -28,15 +35,18 @@ public class EditingState extends State {
         return new Result("0001", "编辑中不可撤销审核");
     }
 
+    @Override
     public Result close(String activityId, Enum<Status> currentStatus) {
         ActivityService.execStatus(activityId, currentStatus, Status.Close);
         return new Result("0000", "活动关闭成功");
     }
 
+    @Override
     public Result open(String activityId, Enum<Status> currentStatus) {
         return new Result("0001", "非关闭活动不可开启");
     }
 
+    @Override
     public Result doing(String activityId, Enum<Status> currentStatus) {
         return new Result("0001", "编辑中活动不可执行活动中变更");
     }

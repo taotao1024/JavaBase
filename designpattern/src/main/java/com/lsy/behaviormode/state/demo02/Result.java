@@ -1,9 +1,22 @@
 package com.lsy.behaviormode.state.demo02;
 
+/**
+ * TODO
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/18
+ */
 public class Result {
 
-    private String code; // 编码
-    private String info; // 描述
+    /**
+     * 编码
+     */
+    private String code;
+    /**
+     * 描述
+     */
+    private String info;
 
     public Result(String code, String info) {
         this.code = code;

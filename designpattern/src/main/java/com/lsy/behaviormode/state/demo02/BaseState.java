@@ -2,7 +2,14 @@ package com.lsy.behaviormode.state.demo02;
 
 import com.lsy.behaviormode.state.demo00.Status;
 
-public abstract class State {
+/**
+ * TODO
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/18
+ */
+public abstract class BaseState {
 
     /**
      * 活动提审

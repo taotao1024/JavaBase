@@ -1,5 +1,12 @@
 package com.lsy.behaviormode.state.demo01;
 
+/**
+ * TODO
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/18
+ */
 public class Result {
     /**
      * 编码

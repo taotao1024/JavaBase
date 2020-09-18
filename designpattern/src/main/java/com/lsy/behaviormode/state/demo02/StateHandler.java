@@ -7,18 +7,35 @@ import com.lsy.behaviormode.state.demo02.impl.*;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * TODO
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/18
+ */
 public class StateHandler {
 
-    private Map<Enum<Status>, State> stateMap = new ConcurrentHashMap<Enum<Status>, State>();
+    private Map<Enum<Status>, BaseState> stateMap = new ConcurrentHashMap<Enum<Status>, BaseState>();
 
+    /**
+     * 构造函数
+     */
     public StateHandler() {
-        stateMap.put(Status.Check, new CheckState());     // 待审核
-        stateMap.put(Status.Close, new CloseState());     // 已关闭
-        stateMap.put(Status.Doing, new DoingState());     // 活动中
-        stateMap.put(Status.Editing, new EditingState()); // 编辑中
-        stateMap.put(Status.Open, new OpenState());       // 已开启
-        stateMap.put(Status.Pass, new PassState());       // 审核通过
-        stateMap.put(Status.Refuse, new RefuseState());   // 审核拒绝
+        // 待审核
+        stateMap.put(Status.Check, new CheckState());
+        // 已关闭
+        stateMap.put(Status.Close, new CloseState());
+        // 活动中
+        stateMap.put(Status.Doing, new DoingState());
+        // 编辑中
+        stateMap.put(Status.Editing, new EditingState());
+        // 已开启
+        stateMap.put(Status.Open, new OpenState());
+        // 审核通过
+        stateMap.put(Status.Pass, new PassState());
+        // 审核拒绝
+        stateMap.put(Status.Refuse, new RefuseState());
     }
 
     public Result arraignment(String activityId, Enum<Status> currentStatus) {

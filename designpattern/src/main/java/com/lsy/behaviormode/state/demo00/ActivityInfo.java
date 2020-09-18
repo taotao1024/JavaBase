@@ -10,12 +10,26 @@ import java.util.Date;
  * @date 2020/09/18
  */
 public class ActivityInfo {
-
-    private String activityId;    // 活动ID
-    private String activityName;  // 活动名称
-    private Enum<Status> status;  // 活动状态
-    private Date beginTime;       // 开始时间
-    private Date endTime;         // 结束时间
+    /**
+     * 活动ID
+     */
+    private String activityId;
+    /**
+     * 活动名称
+     */
+    private String activityName;
+    /**
+     * 活动状态
+     */
+    private Enum<Status> status;
+    /**
+     * 开始时间
+     */
+    private Date beginTime;
+    /**
+     * 结束时间
+     */
+    private Date endTime;
 
     public String getActivityId() {
         return activityId;

@@ -69,7 +69,9 @@ public class ActivityService {
      * @param afterStatus  变更后状态 b
      */
     public static synchronized void execStatus(String activityId, Enum<Status> beforeStatus, Enum<Status> afterStatus) {
-        if (!beforeStatus.equals(statusMap.get(activityId))) return;
+        if (!beforeStatus.equals(statusMap.get(activityId))) {
+            return;
+        }
         statusMap.put(activityId, afterStatus);
     }
 

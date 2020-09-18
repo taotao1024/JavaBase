@@ -35,7 +35,9 @@ public class Admin {
      * @return 配置备忘录
      */
     public ConfigMemento undo() {
-        if (--cursorIdx <= 0) return mementoList.get(0);
+        if (--cursorIdx <= 0) {
+            return mementoList.get(0);
+        }
         return mementoList.get(cursorIdx);
     }
 
@@ -45,7 +47,9 @@ public class Admin {
      * @return 配置备忘录
      */
     public ConfigMemento redo() {
-        if (++cursorIdx > mementoList.size()) return mementoList.get(mementoList.size() - 1);
+        if (++cursorIdx > mementoList.size()) {
+            return mementoList.get(mementoList.size() - 1);
+        }
         return mementoList.get(cursorIdx);
     }
 

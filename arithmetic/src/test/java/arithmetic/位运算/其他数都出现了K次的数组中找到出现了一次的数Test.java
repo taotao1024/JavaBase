@@ -1,5 +1,6 @@
-package com.lsy.arithmetic.位运算;
+package arithmetic.位运算;
 
+import com.lsy.arithmetic.位运算.其他数都出现了K次的数组中找到出现了一次的数;
 import junit.framework.TestCase;
 
 /**

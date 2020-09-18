@@ -1,6 +1,8 @@
-package com.lsy.arithmetic.位运算;
+package arithmetic.位运算;
 
+import com.lsy.arithmetic.位运算.整数的二进制数表达中有多少个1;
 import junit.framework.TestCase;
+
 /**
  * @author 19134
  */

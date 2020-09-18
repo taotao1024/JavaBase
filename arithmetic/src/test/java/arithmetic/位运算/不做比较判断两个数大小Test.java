@@ -1,7 +1,10 @@
-package com.lsy.arithmetic.位运算;
+package arithmetic.位运算;
 
+import com.lsy.arithmetic.位运算.不做比较判断两个数大小;
 import junit.framework.TestCase;
 import org.junit.Assert;
+import org.junit.Test;
+
 /**
  * @author 19134
  */

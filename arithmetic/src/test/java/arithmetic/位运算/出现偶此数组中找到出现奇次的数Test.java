@@ -1,6 +1,8 @@
-package com.lsy.arithmetic.位运算;
+package arithmetic.位运算;
 
+import com.lsy.arithmetic.位运算.出现偶此数组中找到出现奇次的数;
 import junit.framework.TestCase;
+
 /**
  * @author 19134
  */

@@ -13,7 +13,7 @@ public class 冒泡排序 {
      *
      * @param num 数组
      */
-    static void sort0(int[] num) {
+    public static void sort0(int[] num) {
         for (int i = 0; i < num.length - 1; i++) {
             for (int j = 0; j < num.length - 1; j++) {
                 if (num[j] > num[j + 1]) {
@@ -32,7 +32,7 @@ public class 冒泡排序 {
      *
      * @param num 数组
      */
-    static void sort1(int[] num) {
+    public static void sort1(int[] num) {
         for (int i = 0; i < num.length - 1; i++) {
             // 每一轮的初始值都是true
             boolean isSorted = true;
@@ -57,7 +57,7 @@ public class 冒泡排序 {
      *
      * @param num 数组
      */
-    static void sort2(int[] num) {
+    public static void sort2(int[] num) {
         // 最后一次交换的位置
         int lastExchangeIndex = 0;
         int sortBorder = num.length - 1;
@@ -88,7 +88,7 @@ public class 冒泡排序 {
      *
      * @param num
      */
-    static void sort3(int[] num) {
+    public static void sort3(int[] num) {
 
         for (int i = 0; i < num.length / 2; i++) {
             // 每一轮的初始值都是true

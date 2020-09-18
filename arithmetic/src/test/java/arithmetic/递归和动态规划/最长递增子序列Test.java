@@ -1,5 +1,6 @@
-package com.lsy.arithmetic.递归和动态规划;
+package arithmetic.递归和动态规划;
 
+import com.lsy.arithmetic.递归和动态规划.最长递增子序列;
 import junit.framework.TestCase;
 
 public class 最长递增子序列Test extends TestCase {

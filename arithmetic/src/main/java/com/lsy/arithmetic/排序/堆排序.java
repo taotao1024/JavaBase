@@ -42,7 +42,7 @@ public class 堆排序 {
      *
      * @param array 带调整的堆
      */
-    static void heapSort(int[] array) {
+    public static void heapSort(int[] array) {
         // 1、把无序数组构建成最大堆
         for (int i = (array.length - 2) / 2; i >= 0; i--) {
             downAdjust(array, i, array.length);

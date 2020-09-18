@@ -1,5 +1,6 @@
-package com.lsy.arithmetic.栈和队列;
+package arithmetic.栈和队列;
 
+import com.lsy.arithmetic.栈和队列.设计一个有getMin功能的栈;
 import junit.framework.TestCase;
 
 public class 设计一个有getMin功能的栈Test extends TestCase {

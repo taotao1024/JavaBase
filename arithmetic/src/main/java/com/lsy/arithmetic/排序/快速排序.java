@@ -16,7 +16,7 @@ public class 快速排序 {
      * @param startIndex 头
      * @param endIndex   尾
      */
-    static void quickSort0(int[] arr, int startIndex, int endIndex) {
+    public static void quickSort0(int[] arr, int startIndex, int endIndex) {
 
         if (startIndex >= endIndex) {
             return;
@@ -73,7 +73,7 @@ public class 快速排序 {
      * @param endIndex   尾
      */
 
-    static void quickSort1(int[] arr, int startIndex, int endIndex) {
+    public static void quickSort1(int[] arr, int startIndex, int endIndex) {
         if (startIndex >= endIndex) {
             return;
         }
@@ -118,7 +118,7 @@ public class 快速排序 {
      * @param endIndex   尾
      */
 
-    static void quickSort2(int[] arr, int startIndex, int endIndex) {
+    public static void quickSort2(int[] arr, int startIndex, int endIndex) {
         // 用一个集合来代替递归函数栈
         Stack<Map<String, Integer>> quickSortStack = new Stack<>();
         // 整个数列的起止下标，以哈希的形式入栈

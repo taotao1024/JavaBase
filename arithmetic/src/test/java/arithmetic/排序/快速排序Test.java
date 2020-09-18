@@ -1,5 +1,6 @@
-package com.lsy.arithmetic.排序;
+package arithmetic.排序;
 
+import com.lsy.arithmetic.排序.快速排序;
 import org.junit.Test;
 
 import java.util.Arrays;

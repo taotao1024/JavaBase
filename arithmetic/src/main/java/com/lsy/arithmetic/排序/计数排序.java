@@ -6,7 +6,7 @@ package com.lsy.arithmetic.排序;
  * @author YY
  */
 public class 计数排序 {
-    static int[] countSort(int[] array) {
+    public static int[] countSort(int[] array) {
         int max = array[0];
         // 1、得到最大值
         for (int i = 0; i < array.length - 1; i++) {

@@ -8,6 +8,10 @@ package com.lsy.behaviormode.strategy.demo01;
  * 2. 满减券
  * 3. 折扣券
  * 4. n元购
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/18
  */
 public class CouponDiscountService {
 
@@ -18,7 +22,9 @@ public class CouponDiscountService {
         }
         // 2. 满减券
         if (2 == type) {
-            if (skuPrice < typeExt) return skuPrice;
+            if (skuPrice < typeExt) {
+                return skuPrice;
+            }
             return skuPrice - typeContent;
         }
         // 3. 折扣券

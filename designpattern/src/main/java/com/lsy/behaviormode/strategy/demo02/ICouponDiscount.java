@@ -10,6 +10,10 @@ import java.math.BigDecimal;
  * 2. 满减券
  * 3. 折扣券
  * 4. n元购
+ *
+ * @author yuanyuan
+ * @version 1.0
+ * @date 2020/09/18
  */
 public interface ICouponDiscount<T> {
 

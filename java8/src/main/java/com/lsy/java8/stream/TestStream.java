@@ -31,5 +31,6 @@ public class TestStream {
             studentIds.add(t.getId());
         }
         System.out.println(studentIds);
+
     }
 }

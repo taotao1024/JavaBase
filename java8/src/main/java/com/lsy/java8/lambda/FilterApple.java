@@ -3,6 +3,7 @@ package com.lsy.java8.lambda;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 /**
@@ -14,13 +15,15 @@ import java.util.function.Predicate;
  */
 public class FilterApple {
     /**
-     * 入口
-     *
-     * @param args 参数数组
+     * Apple数组
      */
-    public static void main(String... args) {
+    static List<Apple> inventory;
 
-        List<Apple> inventory = Arrays.asList(
+    /**
+     * 初始化
+     */
+    public static void init() {
+        inventory = Arrays.asList(
                 new Apple(50, "green"),
                 new Apple(80, "green"),
                 new Apple(155, "green"),
@@ -30,27 +33,35 @@ public class FilterApple {
                 new Apple(155, "red"),
                 new Apple(200, "red")
         );
+    }
+
+    /**
+     * 入口
+     *
+     * @param args 参数数组
+     */
+    public static void main(String... args) {
+
+        FilterApple.init();
 
         // [Apple{color='green', weight=50}, Apple{color='green', weight=80}, Apple{color='green', weight=155}, Apple{color='green', weight=200}]
         List<Apple> greenApples = filterApples(inventory, FilterApple::isGreenApple);
-        System.out.println(greenApples);
 
         // [Apple{color='green', weight=155}, Apple{color='green', weight=200}, Apple{color='red', weight=155}, Apple{color='red', weight=200}]
         List<Apple> heavyApples = filterApples(inventory, FilterApple::isHeavyApple);
-        System.out.println(heavyApples);
 
         // [Apple{color='green', weight=50}, Apple{color='green', weight=80}, Apple{color='green', weight=155}, Apple{color='green', weight=200}]
-        List<Apple> greenApples2 = filterApples(inventory, (Apple a) -> "green".equals(a.getColor()));
-        System.out.println(greenApples2);
+        List<Apple> greenApples2 = filterApples(inventory, a -> "green".equals(a.getColor()));
+
+        List<Apple> greenApples3 = filterApples(inventory, (a) -> "red".equals(a.getColor()));
 
         // [Apple{color='green', weight=155}, Apple{color='green', weight=200}, Apple{color='red', weight=155}, Apple{color='red', weight=200}]
-        List<Apple> heavyApples2 = filterApples(inventory, (Apple a) -> a.getWeight() > 150);
-        System.out.println(heavyApples2);
+        List<Apple> heavyApples4 = filterApples(inventory, (Apple a) -> a.getWeight() > 150);
 
         // [Apple{color='green', weight=50}, Apple{color='red', weight=50}]
-        List<Apple> weirdApples = filterApples(inventory, (Apple a) -> a.getWeight() < 80 ||
-                "brown".equals(a.getColor()));
-        System.out.println(weirdApples);
+        List<Apple> weirdApples = filterApples(inventory, (Apple a) -> a.getWeight() < 80 || "brown".equals(a.getColor()));
+
+        prettyPrintApple(inventory, FilterApple::AppleFancyFormatter);
     }
 
     /**
@@ -102,6 +113,24 @@ public class FilterApple {
     }
 
     /**
+     * 过滤苹果的方法
+     *
+     * @param inventory 苹果清单
+     * @param p         JDK默认的函数式接口
+     * @return 校验后的结果
+     */
+    public static List<Apple> filterApples(List<Apple> inventory, Predicate<Apple> p) {
+        List<Apple> result = new ArrayList<>();
+        for (Apple apple : inventory) {
+            if (p.test(apple)) {
+                result.add(apple);
+            }
+        }
+        System.out.println(result);
+        return result;
+    }
+
+    /**
      * 校验绿色苹果
      *
      * @param apple 苹果对象
@@ -131,21 +160,15 @@ public class FilterApple {
         return apple.getWeight() >= 150;
     }
 
-    /**
-     * 过滤苹果的方法
-     *
-     * @param inventory 苹果清单
-     * @param p         JDK默认的函数式接口
-     * @return 校验后的结果
-     */
-    public static List<Apple> filterApples(List<Apple> inventory, Predicate<Apple> p) {
-        List<Apple> result = new ArrayList<>();
+    public static void prettyPrintApple(List<Apple> inventory, Function<Apple, String> f) {
         for (Apple apple : inventory) {
-            if (p.test(apple)) {
-                result.add(apple);
-            }
+            String output = f.apply(apple);
+            System.out.println(output);
         }
-        return result;
+    }
+
+    private static String AppleFancyFormatter(Apple apple) {
+        return "An apple of " + apple.getWeight() + "g";
     }
 
     /**
@@ -155,9 +178,15 @@ public class FilterApple {
         private int weight = 0;
         private String color = "";
 
+
+
         public Apple(int weight, String color) {
             this.weight = weight;
             this.color = color;
+        }
+
+        public Apple() {
+
         }
 
         public Integer getWeight() {

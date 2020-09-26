@@ -11,6 +11,7 @@ public class InterfaceV0Test {
     public void getString() {
         // 匿名实现接口的抽象方法
         InterfaceV0 interfaceV0 = new InterfaceV0() {
+            @Override
             public void getString(String s) {
                 System.out.println("我被调用了");
             }

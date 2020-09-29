@@ -13,8 +13,8 @@ import java.util.List;
  */
 public class ListErr {
     public static void main(String[] args) {
-        List<String> strings = Arrays.asList("Java开发", "Vue开发", "Linux驱动开发");
-        strings.forEach(list -> System.out.println(list.toString()));
+        List<String> lists = Arrays.asList("Java开发", "Vue开发", "Linux驱动开发");
+        lists.forEach(list -> System.out.println(list.toString()));
 
         ArrayList<String> strings1 = new ArrayList<>();
         ArrayList<Integer> integers = new ArrayList<>();

@@ -1,6 +1,7 @@
 package com.lsy.oop.genericity;
 
 import java.util.Collection;
+import java.util.HashMap;
 
 /**
  * 泛型方法
@@ -21,5 +22,9 @@ public class GenericMethod {
         for (T o : t) {
             c.add(o);
         }
+    }
+
+    static <K, V> HashMap<K, V> getHashMap() {
+        return new HashMap<K, V>();
     }
 }

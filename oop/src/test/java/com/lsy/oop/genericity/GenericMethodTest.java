@@ -1,9 +1,9 @@
 package com.lsy.oop.genericity;
 
-import com.sun.org.apache.xpath.internal.operations.String;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import static org.junit.Assert.*;
 
@@ -23,5 +23,14 @@ public class GenericMethodTest {
         Integer[] oi = new Integer[100];
         ArrayList<Integer> ci = new ArrayList<>();
         GenericMethod.formArrayToCollection(oi, ci);
+    }
+
+    @Test
+    public void getHashMap() {
+        HashMap<Integer, String> hashMap = GenericMethod.getHashMap();
+        hashMap.put(20, "成功");
+        hashMap.put(30, "失败");
+        hashMap.put(31, "超时");
+        System.out.println(hashMap);
     }
 }

@@ -7,9 +7,9 @@ package com.lsy.oop.genericity;
  * @version 1.0
  * @date 2020/10/05
  */
-public abstract class Shape {
+public abstract class BaseShape {
     /**
      * 画
      */
-    public abstract void draw();
+    public abstract void draw(Canvas c);
 }

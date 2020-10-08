@@ -54,7 +54,7 @@ public interface InterfaceStaticMethod {
      *
      * @param first first
      * @param more  其他
-     * @return
+     * @return 路径
      */
     static Path get(String first, String... more) {
         return FileSystems.getDefault().getPath(first, more);

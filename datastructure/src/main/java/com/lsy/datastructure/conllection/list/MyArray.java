@@ -1,4 +1,4 @@
-package com.lsy.datastructure.conllection.list.array;
+package com.lsy.datastructure.conllection.list;
 
 /**
  * 我的数组

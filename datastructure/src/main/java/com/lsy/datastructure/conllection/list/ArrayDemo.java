@@ -1,7 +1,7 @@
 package com.lsy.datastructure.conllection.list;
 
 /**
- * 请跳转测试
+ * 请跳转测试类
  *
  * @author yuanyuan
  * @version 1.0

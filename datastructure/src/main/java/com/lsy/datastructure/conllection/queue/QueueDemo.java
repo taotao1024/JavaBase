@@ -1,4 +1,4 @@
-package com.lsy.datastructure.conllection.list;
+package com.lsy.datastructure.conllection.queue;
 
 /**
  * 请跳转测试类

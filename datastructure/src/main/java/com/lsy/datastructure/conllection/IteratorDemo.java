@@ -7,7 +7,7 @@ package com.lsy.datastructure.conllection;
  * @version 1.0
  * @date 2020/10/09
  */
-public class IteratorTest {
+public class IteratorDemo {
     public void iteratorTest() {
     }
 

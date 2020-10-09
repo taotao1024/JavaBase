@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
  * 通过Collection操作集合
  */
 @RunWith(JUnit4.class)
-public class CollectionTestTest {
+public class CollectionDemoTest {
 
     static Collection<Object> collection;
 

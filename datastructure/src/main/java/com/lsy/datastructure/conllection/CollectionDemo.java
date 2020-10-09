@@ -7,7 +7,7 @@ package com.lsy.datastructure.conllection;
  * @version 1.0
  * @date 2020/10/08
  */
-public class CollectionTest {
+public class CollectionDemo {
 
     public void collectionTest() {
     }

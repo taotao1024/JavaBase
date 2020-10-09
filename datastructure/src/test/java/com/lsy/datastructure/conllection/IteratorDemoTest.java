@@ -8,7 +8,7 @@ import java.util.Iterator;
 
 import static org.junit.Assert.*;
 
-public class IteratorTestTest {
+public class IteratorDemoTest {
 
     static HashSet<String> set;
 

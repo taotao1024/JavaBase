@@ -1,4 +1,4 @@
-package com.lsy.datastructure.hashmap;
+package com.lsy.datastructure.map.hashmap;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,11 +9,8 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import static org.junit.Assert.*;
 
 @RunWith(JUnit4.class)
 public class HashMapDemoTest {

@@ -1,4 +1,4 @@
-package com.lsy.datastructure.arraylist;
+package com.lsy.datastructure.conllection.list.arraylist;
 
 /**
  * TODO

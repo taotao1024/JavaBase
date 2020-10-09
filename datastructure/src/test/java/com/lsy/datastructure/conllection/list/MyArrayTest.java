@@ -1,4 +1,4 @@
-package com.lsy.datastructure.array;
+package com.lsy.datastructure.conllection.list;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

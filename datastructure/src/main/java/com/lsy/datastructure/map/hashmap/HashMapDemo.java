@@ -1,4 +1,4 @@
-package com.lsy.datastructure.hashmap;
+package com.lsy.datastructure.map.hashmap;
 
 import java.util.HashMap;
 

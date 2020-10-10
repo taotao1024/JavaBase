@@ -1,12 +1,9 @@
-package com.lsy.datastructure.conllection.list;
+package com.lsy.datastructure.conllection.list.custom.array;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
 import static org.junit.Assert.*;
 
-@RunWith(JUnit4.class)
 public class MyArrayTest {
     /**
      * 数组长度
@@ -32,5 +29,4 @@ public class MyArrayTest {
         this.array[3] = 12;
         assertEquals(array[3], 12);
     }
-
 }

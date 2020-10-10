@@ -1,4 +1,4 @@
-package com.lsy.datastructure.conllection.list;
+package com.lsy.datastructure.conllection.list.custom.array;
 
 /**
  * 结点

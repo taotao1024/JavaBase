@@ -7,5 +7,6 @@ package com.lsy.datastructure.conllection.list;
  * @version 1.0
  * @date 2020/10/09
  */
-public class ArrayDemo {
+public class ArrayListDemo {
+    public void testAddMethod(){}
 }

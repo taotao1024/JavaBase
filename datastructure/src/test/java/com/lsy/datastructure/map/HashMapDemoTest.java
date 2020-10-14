@@ -1,9 +1,12 @@
-package com.lsy.datastructure.map.hashmap;
+package com.lsy.datastructure.map;
 
+import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import javax.swing.*;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -11,9 +14,34 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.BiConsumer;
 
 @RunWith(JUnit4.class)
 public class HashMapDemoTest {
+
+    private static HashMap<String, String> hashMap;
+
+    @BeforeClass
+    public static void beforeClass() {
+        hashMap = new HashMap();
+        hashMap.put("Java", "99");
+        hashMap.put("Java8", "33");
+        hashMap.put("VUE", "33");
+        hashMap.put("Spring", "199");
+        hashMap.put("SpringCloud", "399");
+    }
+
+    @Test
+    public void testAddHashMap() {
+        System.out.println(hashMap.put("Java", "1"));
+        System.out.println(hashMap);
+        // keySet是Map的key组成的set集合
+        System.out.println(hashMap.keySet());
+        System.out.println(hashMap.containsKey("Java8"));
+        System.out.println(hashMap.containsValue("33"));
+        System.out.println("JDK8使用Lambda遍历结果如下 : ");
+        hashMap.forEach((k, v) -> System.out.println("key: " + k + " value:" + v));
+    }
 
 
     @Test
@@ -50,7 +78,7 @@ public class HashMapDemoTest {
         Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
         while (iterator.hasNext()) {
             Map.Entry<String, String> next = iterator.next();
-            if (next.getKey().equals("1")||next.getKey().equals("2")){
+            if (next.getKey().equals("1") || next.getKey().equals("2")) {
                 iterator.remove();
             }
            /* Map.Entry entry = iterator.next();
@@ -104,6 +132,7 @@ public class HashMapDemoTest {
     }
 
     @Test
+    @Ignore
     public void testSizeMaxAndCapacity() throws Exception {
 
         long startTime = System.currentTimeMillis();

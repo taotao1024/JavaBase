@@ -1,4 +1,4 @@
-package com.lsy.datastructure.map.hashmap;
+package com.lsy.datastructure.map;
 
 import java.util.HashMap;
 
@@ -10,10 +10,15 @@ import java.util.HashMap;
  * @author YY
  */
 public class HashMapDemo {
-    public static void main(String[] args) {
-        // 1.7死循环   1.8元素覆盖 丢失
-        new HashMap<>();
-    }
+    // 1.7死循环   1.8元素覆盖 丢失
+    HashMap hashMap = new HashMap();
+
+    public void addHashMap(){};
+
+
+
+
+
 
 /*    final V putVal(int hash, K key, V value, boolean onlyIfAbsent, boolean evict) {
         HashMap.Node<K,V>[] tab; HashMap.Node<K,V> p; int n, i;

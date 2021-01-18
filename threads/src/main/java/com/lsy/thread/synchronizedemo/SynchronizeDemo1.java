@@ -4,6 +4,10 @@ package com.lsy.thread.synchronizedemo;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * synchronized获取的都是对象锁
+ * A线程先持有Object对象的Lock锁，B线程可以以异步的方式调用object对象中的非synchronized类型的方法
+ * A线程先持有Object对象的Lock锁，B线程如果这个时候调用object对象中的synchronized方法，则需要等待，也就是同步。
+ *
  * @author YY
  */
 public class SynchronizeDemo1 {

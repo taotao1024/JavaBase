@@ -14,14 +14,14 @@
             <artifactId>junit</artifactId>
             <version>4.13</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <!-- lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.12</version>
             <scope>provided</scope>
         </dependency>
-        <!-- ZK -->
+        <!-- ZK start-->
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
@@ -43,7 +43,7 @@
             <artifactId>curator-client</artifactId>
             <version>4.0.1</version>
         </dependency>
-        <!-- ZK -->
+        <!-- ZK end-->
 
     </dependencies>
 
